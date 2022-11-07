@@ -1,0 +1,58 @@
+.login-wrapper {
+    background-color: #FFD972;
+    height: 100%;
+    position: relative;
+
+
+    .login-signup {
+        position: absolute;
+        margin-left: 450px;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .login {
+
+            h1 {
+                margin-bottom: 60px;
+            }
+        }
+
+        .sign-up {
+            margin-left: 200px;
+
+            h1 {
+                margin-bottom: 60px;
+            }
+        }
+
+    #em, #pw , #fn, #ln, #sem, #spw {
+        width: 206.5px;
+        border: none;
+        display: block;
+        margin-bottom: 50px;
+        background-color: #FFD972;
+        border-bottom: 2px solid black;
+    }
+    ::-webkit-input-placeholder { 
+        font-size: 12px;
+        color: black;
+    }
+
+.buttons {
+     width: 209px;
+     height: 52px;
+     font-size: 25px;
+     padding: 10px 32px;
+     border-radius: 112px;
+     border: none;
+     cursor: pointer;
+     text-decoration: none;
+     color: black;
+      background-color: #FFD972; 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+    }
+    }
+   
+}

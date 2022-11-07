@@ -58,6 +58,54 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 70px auto 0 110px;
 }
 
+.login-wrapper {
+  background-color: #FFD972;
+  height: 100%;
+  position: relative;
+}
+.login-wrapper .login-signup {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-wrapper .login-signup .login h1 {
+  margin-bottom: 60px;
+}
+.login-wrapper .login-signup .sign-up {
+  margin-left: 200px;
+}
+.login-wrapper .login-signup .sign-up h1 {
+  margin-bottom: 60px;
+}
+.login-wrapper .login-signup #em, .login-wrapper .login-signup #pw, .login-wrapper .login-signup #fn, .login-wrapper .login-signup #ln, .login-wrapper .login-signup #sem, .login-wrapper .login-signup #spw {
+  width: 206.5px;
+  border: none;
+  display: block;
+  margin-bottom: 50px;
+  background-color: #FFD972;
+  border-bottom: 2px solid black;
+}
+.login-wrapper .login-signup ::-webkit-input-placeholder {
+  font-size: 12px;
+  color: black;
+}
+.login-wrapper .login-signup .buttons {
+  width: 209px;
+  height: 52px;
+  font-size: 25px;
+  padding: 10px 32px;
+  border-radius: 112px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background-color: #FFD972;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+}
+
 footer {
   position: absolute;
   bottom: 0;
