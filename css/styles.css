@@ -13,11 +13,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 100%;
   background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../../images/hero.jpg);
 }
 .home-wrapper .pink-circle {
@@ -53,6 +56,27 @@ h1, h2, h3, h4, h5, h6, p {
   width: 164px;
   height: 78px;
   margin: 70px auto 0 110px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .spef-text {
+  display: flex;
+}
+footer .spef-text .spef-text-inside {
+  margin-right: 26px;
+}
+footer img {
+  width: 19px;
+  height: 19px;
+  margin-right: 40.4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
