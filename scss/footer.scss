@@ -1,18 +1,26 @@
 
 footer {
-    position:absolute;
     bottom:0;
     width:100%;
-    height: 18px;
+    height: 40px;
     display: flex;
+    position:absolute;
     align-items: center;
     justify-content: space-between;
+
+    .footLogo{
+        font-size: 15px;
+        margin-left: 20px;
+        font-family: LatoItalic;
+    }
 
     .spef-text {
         display: flex;
     
         .spef-text-inside{
+             font-size: 15px;
              margin-right: 26px;
+             font-family: LatoItalic;
         }
     }
 

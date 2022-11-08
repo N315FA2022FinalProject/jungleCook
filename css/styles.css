@@ -12,6 +12,26 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+@font-face {
+  font-family: CaveatBold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: CaveatRegulat;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url(../css/fonts/Lato-Black.ttf);
+}
 .home-wrapper {
   width: 100vw;
   min-height: 100vh;
@@ -35,8 +55,10 @@ h1, h2, h3, h4, h5, h6, p {
 .home-wrapper .pink-circle .pink-home-text {
   width: 105.76px;
   height: 37.77px;
-  margin-top: 35px;
-  margin-left: 55px;
+  margin-top: 65px;
+  margin-left: 45px;
+  font-size: 10px;
+  font-family: LatoItalic;
 }
 .home-wrapper .yellow-circle {
   width: 357.58px;
@@ -50,11 +72,15 @@ h1, h2, h3, h4, h5, h6, p {
 .home-wrapper .yellow-circle h1 {
   width: 300px;
   height: 32px;
-  margin: 80px auto 0 62px;
+  font-size: 24px;
+  font-family: CaveatBold;
+  margin: 80px auto 0 110px;
 }
 .home-wrapper .yellow-circle .yellow-home-text {
   width: 164px;
   height: 78px;
+  font-size: 13px;
+  font-family: LatoRegular;
   margin: 70px auto 0 110px;
 }
 
@@ -72,13 +98,21 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-evenly;
 }
 .login-wrapper .login-signup .login h1 {
+  font-size: 30px;
   margin-bottom: 60px;
+  font-family: LatoBlack;
 }
 .login-wrapper .login-signup .sign-up {
   margin-left: 200px;
 }
+.login-wrapper .login-signup .sign-up .signup-alert {
+  font-size: 12px;
+  font-family: LatoItalic;
+}
 .login-wrapper .login-signup .sign-up h1 {
+  font-size: 30px;
   margin-bottom: 60px;
+  font-family: LatoBlack;
 }
 .login-wrapper .login-signup #em, .login-wrapper .login-signup #pw, .login-wrapper .login-signup #fn, .login-wrapper .login-signup #ln, .login-wrapper .login-signup #sem, .login-wrapper .login-signup #spw {
   width: 206.5px;
@@ -89,8 +123,9 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 2px solid black;
 }
 .login-wrapper .login-signup ::-webkit-input-placeholder {
-  font-size: 12px;
   color: black;
+  font-size: 12px;
+  font-family: LatoRegular;
 }
 .login-wrapper .login-signup .buttons {
   width: 209px;
@@ -103,23 +138,43 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
   color: black;
   background-color: #FFD972;
+  font-family: CaveatRegular;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
 }
 
+.yRecipes-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.5), rgba(167, 232, 189, 0.5)), url(../../images/recipe-hero.jpg);
+}
+
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 18px;
+  height: 40px;
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: space-between;
+}
+footer .footLogo {
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: LatoItalic;
 }
 footer .spef-text {
   display: flex;
 }
 footer .spef-text .spef-text-inside {
+  font-size: 15px;
   margin-right: 26px;
+  font-family: LatoItalic;
 }
 footer img {
   width: 19px;

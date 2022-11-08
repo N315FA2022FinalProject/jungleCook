@@ -21,8 +21,10 @@
             .pink-home-text {
                 width: 105.76px;
                 height: 37.77px;
-                margin-top: 35px;
-                margin-left: 55px;
+                margin-top: 65px;
+                margin-left: 45px;
+                font-size: 10px;
+                font-family: LatoItalic;
             }
             }
 
@@ -38,11 +40,15 @@
         h1 {
             width: 300px;
             height: 32px;
-           margin: 80px auto 0 62px; //top right bottom left
+            font-size: 24px;
+            font-family: CaveatBold;
+           margin: 80px auto 0 110px; //top right bottom left
         }
         .yellow-home-text {
             width: 164px;
             height: 78px;
+            font-size: 13px;
+            font-family: LatoRegular;
             margin: 70px auto 0 110px; //top right bottom left
         }
         }

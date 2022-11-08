@@ -15,15 +15,24 @@
         .login {
 
             h1 {
+                font-size: 30px;
                 margin-bottom: 60px;
+                font-family: LatoBlack;
             }
         }
 
         .sign-up {
             margin-left: 200px;
 
+            .signup-alert {
+                font-size: 12px;
+                font-family: LatoItalic;
+            }
+
             h1 {
+                font-size: 30px;
                 margin-bottom: 60px;
+                font-family: LatoBlack;
             }
         }
 
@@ -36,8 +45,9 @@
         border-bottom: 2px solid black;
     }
     ::-webkit-input-placeholder { 
-        font-size: 12px;
         color: black;
+        font-size: 12px;
+        font-family: LatoRegular;
     }
 
 .buttons {
@@ -51,7 +61,8 @@
      text-decoration: none;
      color: black;
       background-color: #FFD972; 
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+      font-family: CaveatRegular;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
     }
     }
    
