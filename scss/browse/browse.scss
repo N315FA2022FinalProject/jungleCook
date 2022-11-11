@@ -1,0 +1,278 @@
+.browsePage {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image:linear-gradient((rgba(167, 232, 189, 0.6)),(rgba(167, 232, 189, 0.6))), url(../../images/recipe-hero.jpg);
+    position: absolute;
+
+    .browseHeader {
+        margin-top: 195px;
+        margin-left: 107px;
+        font-size: 25px;
+        font-family: CaveatBold;
+        letter-spacing: 2.5px;
+    }
+
+    .recipe-row-one {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        //pizza and burger recipe
+        .recipe-info-box {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-right: 51px;
+            
+            .recipeImg  Img {
+                width: 300px;
+                height: 263px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 24px;
+            }
+    
+            .recipe-txt-box {
+                width: 224px;
+                height: 263px;
+                background-color: #FFF;
+                border-radius: 24px;
+    
+                .recipeHeader {
+                    font-size: 15px;
+                    font-family: LatoBlack;
+                    text-align: center;
+                    margin-top: 43px;
+                    margin-right: 20px;
+                    letter-spacing: 1.5px;
+                }
+    
+                hr.headerUnderline {
+                    width: 128px;
+                    border: 2.8px solid #000000;
+                    margin: 0 auto;
+                    margin-top: -16px;
+                    margin-left: 42px;
+                }
+    
+                .recipeInfo {
+                    font-size: 9px;
+                    font-family: LatoRegular;
+                    letter-spacing: .9px;
+                    width: 139px;
+                    margin: 0 auto;
+                    margin-top: 21px;
+                }
+
+                .recipeBurgerInfo {
+                    font-size: 9px;
+                    font-family: LatoRegular;
+                    letter-spacing: .9px;
+                    width: 169px;
+                    margin: 0 auto;
+                    margin-top: 21px;
+                }
+    
+                .timeInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: 24px;
+                    margin-left: 60px;
+                    
+                    img {
+                        height: 24px;
+                        width: 23px;
+                    }
+                    .timeTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                    }
+                }
+    
+                .servingInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: -10px;
+                    margin-left: 62px;
+                    
+                    img {
+                        height: 23px;
+                        width: 22px;
+                    }
+                    .servingTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                        margin-left: 2px;
+                    }
+                }
+
+                .timeBurgerInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: 14px;
+                    margin-left: 60px;
+                    
+                    img {
+                        height: 24px;
+                        width: 23px;
+                    }
+                    .timeBurgerTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                    }
+                }
+    
+                .servingBurgerInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: -10px;
+                    margin-left: 67px;
+                    
+                    img {
+                        height: 23px;
+                        width: 22px;
+                    }
+                    .servingBurgerTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .recipe-row-two {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        .recipe-info-box {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-right: 51px;
+            
+            .recipeImg  Img {
+                width: 300px;
+                height: 263px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 24px;
+            }
+    
+            .recipe-txt-box {
+                width: 224px;
+                height: 263px;
+                background-color: #FFF;
+                border-radius: 24px;
+    
+                .recipeHeader {
+                    font-size: 15px;
+                    font-family: LatoBlack;
+                    text-align: center;
+                    margin-top: 43px;
+                    margin-right: 10px;
+
+                    letter-spacing: 1.5px;
+                }
+
+                .recipeChowHeader {
+                    font-size: 15px;
+                    font-family: LatoBlack;
+                    text-align: center;
+                    margin-top: 43px;
+                    margin-right: 20px;
+                    letter-spacing: 1.5px;
+                }
+    
+                hr.headerUnderline {
+                    width: 135px;
+                    border: 2.8px solid #000;
+                    margin: 0 auto;
+                    margin-top: -16px;
+                    margin-left: 42px;
+                }
+    
+                .recipeInfo {
+                    font-size: 9px;
+                    font-family: LatoRegular;
+                    letter-spacing: .9px;
+                    width: 139px;
+                    margin: 0 auto;
+                    margin-top: 21px;
+                }
+    
+                .timeInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: 14px;
+                    margin-left: 60px;
+                    
+                    img {
+                        height: 24px;
+                        width: 23px;
+                    }
+                    .timeTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                    }
+                }
+    
+                .servingInfo {
+                    width: 94px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    margin-top: -10px;
+                    margin-left: 62px;
+                    
+                    img {
+                        height: 23px;
+                        width: 22px;
+                    }
+                    .servingTxt {
+                        font-size: 10px;
+                        font-family: LatoRegular;
+                        letter-spacing: .2px;
+                        margin-top: 15px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

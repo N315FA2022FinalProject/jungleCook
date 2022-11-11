@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @font-face { 
-    font-family:CaveatRegulat;
+    font-family:CaveatRegular;
     src: url(../css/fonts/Caveat-Regular.ttf);
 }
 
@@ -34,4 +34,9 @@ h1, h2, h3, h4, h5, h6, p {
 @font-face {
     font-family: LatoBlack;
     src: url(../css/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url(../css/fonts/Lato-Light.ttf);
 }

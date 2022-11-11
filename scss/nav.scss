@@ -1,0 +1,59 @@
+nav {
+    height: 82px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 2;
+
+    .logo {
+        margin-left: 50px;
+        width: 280px;
+        height: 60px;
+        background-image: url("../images/logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .navLinks {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        letter-spacing: 2.5px;
+        margin-right: 50px;
+        
+        a {
+            color: #000;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: CaveatRegular;
+            margin-right: 40px;
+        }
+
+        // when clicked or hovered on, link will be underlined
+        a:active,
+        a:hover {
+            text-decoration: underline;
+        }
+
+        //div login btn
+        .loginBtn {
+            height: 52px;
+            width: 158px;
+            border-radius: 26px;
+            background-color: #FFD972;
+            box-shadow: 0px 10px 6px #00000029;
+
+            .loginTxt {
+                margin: 0 auto;
+                margin-left: 30%;
+                margin-top: 6%;
+            }
+        }
+    }
+}
