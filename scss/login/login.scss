@@ -1,9 +1,10 @@
+//login wrapper 
 .login-wrapper {
     background-color: #FFD972;
     height: 100%;
     position: relative;
 
-
+//styling for the div holding both login and signup divs
     .login-signup {
         position: absolute;
         margin-left: 450px;
@@ -12,8 +13,10 @@
         align-items: center;
         justify-content: space-evenly;
 
+        //begin login div
         .login {
 
+            //styling h1 inside of login div
             h1 {
                 font-size: 30px;
                 margin-bottom: 60px;
@@ -21,14 +24,18 @@
             }
         }
 
+
+        //styling for sign up div
         .sign-up {
             margin-left: 200px;
 
+            //text on top of main header
             .signup-alert {
                 font-size: 12px;
                 font-family: LatoItalic;
             }
 
+            //sign up text
             h1 {
                 font-size: 30px;
                 margin-bottom: 60px;
@@ -36,6 +43,7 @@
             }
         }
 
+        //individual inputs that have same styling to them
     #em, #pw , #fn, #ln, #sem, #spw {
         width: 206.5px;
         border: none;
@@ -44,24 +52,25 @@
         background-color: #FFD972;
         border-bottom: 2px solid black;
     }
+    //this is what changes the placeholder text
     ::-webkit-input-placeholder { 
         color: black;
         font-size: 12px;
         font-family: LatoRegular;
     }
-
+//styling for both buttons (login + signup)
 .buttons {
      width: 209px;
      height: 52px;
      font-size: 25px;
      padding: 10px 32px;
      border-radius: 112px;
+     color: black;
      border: none;
      cursor: pointer;
      text-decoration: none;
-     color: black;
-      background-color: #FFD972; 
-      font-family: CaveatRegular;
+     background-color: #FFD972; 
+     font-family: CaveatRegular;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
     }
     }
