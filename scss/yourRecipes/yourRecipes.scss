@@ -1,3 +1,4 @@
+//your recipes page wrapper
 .yRecipes-wrapper {
     width: 100vw;
     min-height: 100vh;
@@ -9,4 +10,116 @@
     position: relative;
     background-image:linear-gradient((rgba(167, 232, 189, 0.5)),(rgba(167, 232, 189, 0.5))), url(../../images/recipe-hero.jpg);
     
+    //h1 with title of page wrapper
+    h1 {
+        width: 498px;
+        top: 150px;
+        left: 60px;
+        position: absolute;
+    }
+
+    // the entire container of img and descriptions
+    .display-all {
+
+
+         //image container
+    .image-contain {
+        position: absolute;
+        width: 300px;
+        height: 263px;
+        top: 250px;
+        left: 60px;
+        // background-color: black;
+
+        //rectangular shape of the image
+        .rectangle {
+            width: 300px;
+            height: 263px;
+            border-radius: 35px;
+            // background-color: red;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            //button inside of the image div
+            .viewBtn {
+                width: 127.66px;
+                height: 42.01px;
+                padding: 10px 32px;
+                border-radius: 112px;
+                color: black;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                margin-top: 110px;
+                margin-left: 70px;
+                background-color: #FFD972; 
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        //image that will go into the rectangle div
+        .cut-image {
+            background-image: url(/images/recipe-pizza.jpg);
+        }
+    }
+
+    //description container
+    .text-contain {
+        top: 250px;
+        left: 360px;
+        width: 224px;
+        height: 263px;
+        position: absolute;
+        border-radius: 35px;
+        background-color: white;
+
+        //title of the recipe
+        h3 {
+            margin-left: 47px;
+            margin-top: 40px;
+        }
+
+        //underline of title
+        .line {
+            width: 130px;
+            height: 3.5px;
+            margin-top: -16px;
+            margin-left: 45px;
+            background-color: black;
+        }
+
+        //the recipe description
+        .rec-detail {
+            width: 140px;
+            height: 54px;
+            font-size: 9px;
+            letter-spacing: 1px;
+            margin-left: 45px;
+            margin-top: 19.5px;
+            font-family: LatoRegular;
+
+        }
+
+        //displaying the icon and details side by side
+        .spec-det {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            //the styling for both images
+        img {
+            width: 23px;
+            height: 24.66px;
+        }
+
+        .details {
+            height: 12px;
+            margin-top: 5px;
+        }
+        }
+        
+    }
 }
+    }
+   
