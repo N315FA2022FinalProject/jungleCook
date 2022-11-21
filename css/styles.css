@@ -196,7 +196,7 @@ nav .navLinks .loginBtn .loginTxt {
 }
 .browsePage .recipe-row-one .recipe-info-box .recipe-txt-box hr.headerUnderline {
   width: 128px;
-  border: 2.8px solid #000000;
+  border-top: solid 2px #000000;
   margin: 0 auto;
   margin-top: -16px;
   margin-left: 42px;
@@ -338,7 +338,7 @@ nav .navLinks .loginBtn .loginTxt {
 }
 .browsePage .recipe-row-two .recipe-info-box .recipe-txt-box hr.headerUnderline {
   width: 135px;
-  border: 2.8px solid #000;
+  border-top: solid 2px #000;
   margin: 0 auto;
   margin-top: -16px;
   margin-left: 42px;
@@ -900,6 +900,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 20px;
   letter-spacing: 2px;
   margin-left: 134px;
+  cursor: pointer;
 }
 
 footer {
