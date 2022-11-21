@@ -416,6 +416,7 @@ nav .navLinks .loginBtn .loginTxt {
   justify-content: space-between;
   padding-bottom: 7px;
   border-bottom: 3px solid #000;
+  cursor: pointer;
 }
 .createRecipePage .recipeForm .addRecipeImg label {
   font-size: 20px;
@@ -540,6 +541,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 20px;
   color: #FFF;
   letter-spacing: 1.7px;
+  cursor: pointer;
 }
 .createRecipePage .recipeIngredientForm .addIngredient .addIngredientBtn .addIngredientTxt {
   text-align: center;
@@ -611,6 +613,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 20px;
   color: #FFF;
   letter-spacing: 1.7px;
+  cursor: pointer;
 }
 .createRecipePage .recipeInstructionForm .addInstruction .addInstructionBtn .addInstructionTxt {
   text-align: center;
@@ -634,6 +637,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-family: CaveatRegular;
   font-size: 25px;
   letter-spacing: 2.5px;
+  cursor: pointer;
 }
 
 .login-wrapper {
@@ -800,6 +804,102 @@ nav .navLinks .loginBtn .loginTxt {
   text-decoration: none;
   background-color: #FFD972;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+}
+
+.viewRecipe {
+  margin-top: 243px;
+}
+.viewRecipe .topSection {
+  display: flex;
+  align-items: center;
+}
+.viewRecipe .topSection .titleImg {
+  display: flex;
+  align-items: center;
+}
+.viewRecipe .topSection .titleImg .verticalTxt {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+.viewRecipe .topSection .titleImg img {
+  width: 468px;
+  height: 421px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -90px;
+}
+.viewRecipe .topSection .recipeDetails {
+  padding-left: 40px;
+}
+.viewRecipe .topSection .recipeDetails .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .topSection .recipeDetails .viewRecipeTxtsmall {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+  width: 455px;
+}
+.viewRecipe .topSection .recipeDetails .subHeader {
+  font-size: 20px;
+  font-family: LatoBlack;
+  letter-spacing: 4px;
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.viewRecipe .ingredientsSection {
+  padding-left: 136px;
+  margin-top: 60px;
+}
+.viewRecipe .ingredientsSection .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .ingredientsSection .ingredientList {
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+.viewRecipe .ingredientsSection .ingredientList li {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+}
+.viewRecipe .instructionsSection {
+  padding-left: 136px;
+}
+.viewRecipe .instructionsSection .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .instructionsSection .instructionList {
+  margin-bottom: 60px;
+  padding-left: 28px;
+}
+.viewRecipe .instructionsSection .instructionList li {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+}
+.viewRecipe .editRecipeBtn {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  border: 1px solid #FFD972;
+  font-family: CaveatRegular;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: 134px;
 }
 
 footer {

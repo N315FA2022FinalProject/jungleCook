@@ -1,0 +1,112 @@
+.viewRecipe {
+    margin-top: 243px;
+
+    //includes vertical text, img, description, total time, serving size
+    .topSection {
+        display: flex;
+        align-items: center;
+        
+        //vertical text and img
+        .titleImg {
+            display: flex;
+            align-items: center;
+            
+            .verticalTxt {
+                font-size: 25px;
+                letter-spacing: 5px;
+                font-family: LatoBlack;
+                transform: matrix(0, -1, 1, 0, 0, 0);
+            }
+            img {
+                width: 468px;
+                height: 421px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: -90px;
+            }
+        }
+
+        //description, total time, and serving size
+        .recipeDetails {
+            padding-left: 40px;
+            .mainHeader {
+                font-size: 25px;
+                letter-spacing: 5px;
+                font-family: LatoBlack;
+                margin-bottom: 36px;
+            }
+
+            .viewRecipeTxtsmall {
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-family: CaveatRegular;
+                width: 455px;
+            }
+
+            .subHeader {
+                font-size: 20px;
+                font-family: LatoBlack;
+                letter-spacing: 4px;
+                margin-top: 40px;
+                margin-bottom: 36px;
+            }
+        }
+    }
+
+    .ingredientsSection {
+        padding-left: 136px;
+        margin-top: 60px;
+
+        .mainHeader {
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-family: LatoBlack;
+            margin-bottom: 36px;
+        }
+
+        .ingredientList {
+            list-style-type: none;
+            margin-bottom: 60px;
+
+            li {
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-family: CaveatRegular;
+            }
+        }
+    }
+
+    .instructionsSection {
+        padding-left: 136px;
+
+        .mainHeader {
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-family: LatoBlack;
+            margin-bottom: 36px;
+        }
+
+        .instructionList {
+            margin-bottom: 60px;
+            padding-left: 28px;
+            li {
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-family: CaveatRegular;
+            }
+        }
+    }
+
+    .editRecipeBtn {
+        width: 128px;
+        height: 42px;
+        background-color: #FFD972;
+        border-radius: 26px;
+        border: 1px solid #FFD972;
+        font-family: CaveatRegular;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-left: 134px;
+    }
+}
