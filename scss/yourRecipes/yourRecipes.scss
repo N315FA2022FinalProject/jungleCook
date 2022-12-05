@@ -1,171 +1,122 @@
-//your recipes page wrapper
-.yRecipes-wrapper {
-    width: 100vw;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0; 
+//your recipe wrapper that holds the entirety of the page
+.yrecipe {
+    height: calc(100vh);  
+    max-width: 100%;
+    background-image: linear-gradient(
+        rgba(167, 232, 189, 0.6),
+        rgba(167, 232, 189, 0.6)
+    ), url(../images/recipe-hero.jpg);
+   
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    background-image:linear-gradient((rgba(167, 232, 189, 0.5)),(rgba(167, 232, 189, 0.5))), url(../../images/recipe-hero.jpg);
-    
-    //h1 with title of page wrapper
-    h1 {
-        width: 498px;
-        top: 150px;
-        left: 60px;
-        position: absolute;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    .wrap {
+        width: 524px;
+        height: 402px;
+        margin-left: 127px;
+        margin-bottom: 170px;
+    }
+    .rec-header {
+        width: 440px;
+        height: 32px;
+        margin-bottom: 50px;
+        
     }
 
-    //this sets each img-descrip to display side by side
-    .recipe-row-one {
-        top: 200px;
-        left: 60px;
-        position: absolute;
+    .foodDivBox {
+        width: 524px;
+        height: 263px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        
-        //info box that contains a recipe
-        .recipe-info-box {
-            display: flex;
-            align-items: center;
-            margin-top: 50px;
-            margin-right: 51px;
-            
-            .recipeImg {
-                width: 300px;
-                height: 263px;
-                background-color: chocolate;
-                border-radius: 24px;
-
-                .rec-spec-Img img {
-                    width: 300px;
-                    height: 263px;
-                    border-radius: 24px;
-                    background-color: red;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                .viewBtn {
-                    width: 127.66px;
-                    height: 42.01px;
-                    padding: 10px 32px;
-                     border-radius: 112px;
-                     position: absolute;
-                     top: 160px;
-                     margin-left: -200px;
-                     color: black;
-                     border: none;
-                     cursor: pointer;
-                     text-decoration: none;
-                     background-color: #FFD972; 
-                     font-family: CaveatRegular;
-                      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
-                }
-            }
-
-    
-            .recipe-txt-box {
-                width: 224px;
-                height: 263px;
-                background-color: #FFF;
-                border-radius: 24px;
-    
-                .recipeHeader {
-                    font-size: 15px;
-                    font-family: LatoBlack;
-                    text-align: center;
-                    margin-top: 43px;
-                    margin-right: 20px;
-                    letter-spacing: 1.5px;
-                }
-    
-                hr.headerUnderline {
-                    width: 128px;
-                    border-top: solid 2px #000000;
-                    margin: 0 auto;
-                    margin-top: -16px;
-                    margin-left: 42px;
-                }
-    
-                .recipeInfo {
-                    font-size: 9px;
-                    font-family: LatoRegular;
-                    letter-spacing: .9px;
-                    width: 139px;
-                    margin: 0 auto;
-                    margin-top: 21px;
-                }
-
-    
-                .timeInfo {
-                    width: 94px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    margin: 0 auto;
-                    margin-top: 24px;
-                    margin-left: 60px;
-                    
-                    img {
-                        height: 24px;
-                        width: 23px;
-                    }
-                    .timeTxt {
-                        font-size: 10px;
-                        font-family: LatoRegular;
-                        letter-spacing: .2px;
-                        margin-top: 15px;
-                    }
-                }
-    
-                .servingInfo {
-                    width: 94px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    margin: 0 auto;
-                    margin-top: -10px;
-                    margin-left: 62px;
-                    
-                    img {
-                        height: 23px;
-                        width: 22px;
-                    }
-                    .servingTxt {
-                        font-size: 10px;
-                        font-family: LatoRegular;
-                        letter-spacing: .2px;
-                        margin-top: 15px;
-                        margin-left: 2px;
-                    }
-                }
-            }
-        
-
-            //edit and delete buttons
-            .edBtns {
-
-                //edit and delete specific buttons
-                .ed-delBtn {
-                    width: 127.66px;
-                    height: 42.01px;
-                    padding: 10px 32px;
-                     border-radius: 112px;
-                     color: black;
-                     border: none;
-                     cursor: pointer;
-                     text-decoration: none;
-                     background-color: #FFD972; 
-                     font-family: CaveatRegular;
-                      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
-                }
-            }
-        }
+        justify-content: space-evenly;
+        margin-bottom: 15px;
     }
-   
+    
+    .viewBtn {
+        width: 127px;
+        height: 42px;
+        margin-left: 90px;
+        margin-top: 100px;
+        border-radius: 22px;
+        border: none;
+        padding: 8px;
+        box-shadow: 2px 5px 9px rgba(0,0,0,.2);
+        cursor: pointer;
+        background-color: #FFD972       
+    }
+    .newImg {
+        width: 300px;
+        height: 100%;
+        border-radius: 22px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imgPizza {
+        background-image: url('../../images/recipe-pizza.jpg');
+    }
+    .textContainer {
+        border-radius: 22px;
+        width: 224px;
+        height: 263px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff; 
+    }
+    h2 {
+        margin-bottom: 20px;
+        text-decoration: underline;
+        text-decoration-color: #000;
+        text-decoration-style: solid;
+    }
+    .text-descrip {
+        font-size: 9px;
+    }
+   .text-all {
+        width: 130px;
+        height: 177px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+   .iconwrap{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .icons {
+        height: 23px;
+        width: 23px;
+        margin-right: 10px;
+    }
+
+    // buttons
+   .edDelBtns {
+        width: 269px;
+        height: 42px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ed-del {
+        width: 127px;
+        height: 42px;
+        border-radius: 22px;
+        border: none;
+        padding: 8px;
+        
+        box-shadow: 2px 5px 9px rgba(0,0,0,.2);
+        cursor: pointer;
+        background-color: #FFD972;
+    }
+ 
 }
-   

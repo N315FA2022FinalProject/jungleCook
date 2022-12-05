@@ -1,9 +1,7 @@
 <!-- specific title for the login page -->
 <title>Your Recipes</title>
 <link rel="stylesheet" href="/css/styles.css" />
-<!-- your recipes wrapper that contains the img from the xd file -->
-<div class="yRecipes-wrapper">
-  <!-- navigation of page  -->
+<div class="yrecipe">
   <!-- nav with 5 links (after login) -->
   <nav>
     <!-- junglecook logo -->
@@ -20,78 +18,65 @@
       </div>
     </div>
   </nav>
-  <!-- this will be replaced when functionality begins -->
-  <h1>Hey Michael, here are your recipes!</h1>
-  <!-- this will set it do display: flex -->
-  <div class="recipe-row-one">
-    <div class="recipe-info-box">
-      <!-- recipe image -->
-      <div class="recipeImg">
-        <div class="rec-spec-Img">
-          <img src="/images/recipe-pizza.jpg" alt="" />
+
+  <!-- this wraps the entire rest of the page (not including the img) -->
+  <div class="wrap">
+    <!-- header of page wrapper -->
+    <div class="rec-header">
+      <h1>Hey Michael, here are your recipes!</h1>
+    </div>
+    <!-- entire recipe div-->
+    <div class="foodDivBox">
+      <!-- wraps the entire image  and button-->
+      <div class="newImg imgPizza">
+        <!-- the view button that will link to the view recipe page -->
+        <a href="viewRecipe.html">
           <button class="viewBtn">View</button>
-        </div>
+        </a>
       </div>
 
-      <!-- white recipe info box -->
-      <div class="recipe-txt-box">
-        <p class="recipeHeader">Supreme Pizza</p>
-        <hr class="headerUnderline" />
-        <p class="recipeInfo">
-          Make pizza night super duper out of this world with homemade pizza.
-          This recipe is supreme with vegetables and two types of meat. Yum!
-        </p>
-        <!-- estimated time for recipe -->
-        <div class="timeInfo">
-          <img src="../images/time.svg" alt="stopwatch" />
-          <p class="timeTxt">1h 24min</p>
+      <!-- the div that wraps the entire text -->
+      <div class="textContainer">
+        <!-- the entire text and instructions -->
+        <div class="text-all">
+          <!-- recipe header -->
+          <h2>Supreme Pizza</h2>
+          <!-- recipe description -->
+          <p class="text-descrip">
+            Make pizza night super duper out of this world with homemade pizza.
+            This recipe is supreme with vegetables and two types of meat. Yum!
+          </p>
+          <!-- div that wraps all the icons -->
+          <div class="iconwrap">
+            <!-- time icon -->
+            <img class="icons" src="../images/time.svg" />
+            <p class="text-descrip">1h 24min</p>
+          </div>
+          <!-- div that wraps all the icons -->
+          <div class="iconwrap">
+            <!-- servings icon -->
+            <img class="icons" src="../images/servings.svg" />
+            <p class="text-descrip">4 servings</p>
+          </div>
         </div>
-        <!-- serving size info -->
-        <div class="servingInfo">
-          <img src="../images/servings.svg" alt="servingPlatter" />
-          <p class="servingTxt">4 servings</p>
-        </div>
-      </div>
-
-      <!-- edit and delete buttons -->
-      <div class="edBtns">
-        <button class="ed-delBtn">Edit Recipe</button>
-        <button class="ed-delBtn">Delete</button>
       </div>
     </div>
-
-    <div class="recipe-info-box">
-      <!-- recipe image -->
-      <div class="recipeImg">
-        <div class="rec-spec-Img">
-          <img src="/images/recipe-pizza.jpg" alt="" />
-          <button class="viewBtn">View</button>
-        </div>
-      </div>
-
-      <!-- white recipe info box -->
-      <div class="recipe-txt-box">
-        <p class="recipeHeader">Supreme Pizza</p>
-        <hr class="headerUnderline" />
-        <p class="recipeInfo">
-          Make pizza night super duper out of this world with homemade pizza.
-          This recipe is supreme with vegetables and two types of meat. Yum!
-        </p>
-        <!-- estimated time for recipe -->
-        <div class="timeInfo">
-          <img src="../images/time.svg" alt="stopwatch" />
-          <p class="timeTxt">1h 24min</p>
-        </div>
-        <!-- serving size info -->
-        <div class="servingInfo">
-          <img src="../images/servings.svg" alt="servingPlatter" />
-          <p class="servingTxt">4 servings</p>
-        </div>
-      </div>
+    <!--end of recipe div-->
+    <!-- edit and delete buttons -->
+    <div class="edDelBtns">
+      <a href="#">
+        <!-- edit recipe btn -->
+        <button class="ed-del">Edit Recipe</button>
+      </a>
+      <!-- delete recipe btn -->
+      <button class="ed-del">Delete</button>
     </div>
   </div>
+
+  <!--end of the entire wrap div-->
 </div>
-<!-- end wrapper div and begin footer content -->
+
+<!-- begin footer content -->
 <footer>
   <!-- logo for the footer -->
   <p class="footLogo">Copyright &copy; The Jungle Cook</p>
