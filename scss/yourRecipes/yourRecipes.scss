@@ -30,14 +30,14 @@
             // background-color: black;
     
             //rectangular shape of the image
-            .rectangle {
-                width: 300px;
-                height: 263px;
-                border-radius: 35px;
-                // background-color: red;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+            // .rectangle {
+            //     width: 300px;
+            //     height: 263px;
+            //     border-radius: 35px;
+            //     // background-color: red;
+            //     background-size: cover;
+            //     background-position: center;
+            //     background-repeat: no-repeat;
                 
                 //button inside of the image div
                 .viewBtn {
@@ -54,12 +54,13 @@
                     background-color: #FFD972; 
                     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
                 }
-            }
+            // }
     
             //image that will go into the rectangle div
-            .cut-image {
-                background-image: url(/images/recipe-pizza.jpg);
-            }
+            img {
+                border-radius: 35px;
+                width: 300px;
+                height: 263px;            }
 
         }
     

@@ -722,15 +722,7 @@ nav .navLinks .loginBtn .loginTxt {
   top: 250px;
   left: 60px;
 }
-.yRecipes-wrapper .img-descrip .image-contain .rectangle {
-  width: 300px;
-  height: 263px;
-  border-radius: 35px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.yRecipes-wrapper .img-descrip .image-contain .rectangle .viewBtn {
+.yRecipes-wrapper .img-descrip .image-contain .viewBtn {
   width: 127.66px;
   height: 42.01px;
   padding: 10px 32px;
@@ -744,8 +736,10 @@ nav .navLinks .loginBtn .loginTxt {
   background-color: #FFD972;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
 }
-.yRecipes-wrapper .img-descrip .image-contain .cut-image {
-  background-image: url(/images/recipe-pizza.jpg);
+.yRecipes-wrapper .img-descrip .image-contain img {
+  border-radius: 35px;
+  width: 300px;
+  height: 263px;
 }
 .yRecipes-wrapper .img-descrip .text-contain {
   top: 250px;
