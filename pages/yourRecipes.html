@@ -1,19 +1,38 @@
-<!-- title for browse recpies page -->
+<!-- specific title for the login page -->
 <title>Your Recipes</title>
 <link rel="stylesheet" href="/css/styles.css" />
-
-<!-- browse div -->
+<!-- your recipes wrapper that contains the img from the xd file -->
 <div class="yRecipes-wrapper">
-  <!-- header -->
-  <h1>Recipes: Try some today!</h1>
-
-  <!-- recipe box display -->
+  <!-- navigation of page  -->
+  <!-- nav with 5 links (after login) -->
+  <nav>
+    <!-- junglecook logo -->
+    <div class="logo"></div>
+    <!-- links -->
+    <div class="navLinks">
+      <a href="#">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">Create Recipe</a>
+      <a href="#">Your Recipes</a>
+      <!-- login button -->
+      <div class="loginBtn">
+        <a href="#"><p class="loginTxt">Login</p></a>
+      </div>
+    </div>
+  </nav>
+  <!-- this will be replaced when functionality begins -->
+  <h1>Hey Michael, here are your recipes!</h1>
+  <!-- this will set it do display: flex -->
   <div class="recipe-row-one">
     <div class="recipe-info-box">
       <!-- recipe image -->
       <div class="recipeImg">
-        <img src="../images/recipe-pizza.jpg" alt="pizza" />
+        <div class="rec-spec-Img">
+          <img src="/images/recipe-pizza.jpg" alt="" />
+          <button class="viewBtn">View</button>
+        </div>
       </div>
+
       <!-- white recipe info box -->
       <div class="recipe-txt-box">
         <p class="recipeHeader">Supreme Pizza</p>
@@ -33,82 +52,35 @@
           <p class="servingTxt">4 servings</p>
         </div>
       </div>
-    </div>
-    <div class="recipe-info-box">
-      <!-- recipe image -->
-      <div class="recipeImg">
-        <img src="../images/recipe-burger.jpg" alt="burger" />
-      </div>
-      <!-- white recipe info box -->
-      <div class="recipe-txt-box">
-        <p class="recipeHeader">Classic Burger</p>
-        <hr class="headerUnderline" />
-        <p class="recipeBurgerInfo">
-          Sink your teeth into a delicious restaurant-style, hamburger recipe
-          made from lean beef. Skip the prepackaged patties and take the extra
-          time to craft up your own, and that little extra effort will be worth
-          it.
-        </p>
-        <!-- estimated time for recipe -->
-        <div class="timeBurgerInfo">
-          <img src="../images/time.svg" alt="stopwatch" />
-          <p class="timeBurgerTxt">30 min</p>
-        </div>
-        <!-- serving size info -->
-        <div class="servingBurgerInfo">
-          <img src="../images/servings.svg" alt="servingPlatter" />
-          <p class="servingBurgerTxt">4 servings</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="recipe-row-two">
-    <div class="recipe-info-box">
-      <!-- recipe image -->
-      <div class="recipeImg">
-        <img src="../images/recipe-pilaf.jpg" alt="chicken" />
-      </div>
-      <!-- white recipe info box -->
-      <div class="recipe-txt-box">
-        <p class="recipeHeader">Chicken Biryani</p>
-        <hr class="headerUnderline" />
-        <p class="recipeInfo">
-          Chicken Biryani is a bold and flavorful Indian dish with crazy tender
-          bites of chicken with bell peppers in a deliciously spiced and
-          fragrant rice.
-        </p>
-        <!-- estimated time for recipe -->
-        <div class="timeInfo">
-          <img src="../images/time.svg" alt="stopwatch" />
-          <p class="timeTxt">1h 15min</p>
-        </div>
-        <!-- serving size info -->
-        <div class="servingInfo">
-          <img src="../images/servings.svg" alt="servingPlatter" />
-          <p class="servingTxt">6 servings</p>
-        </div>
+      <!-- edit and delete buttons -->
+      <div class="edBtns">
+        <button class="ed-delBtn">Edit Recipe</button>
+        <button class="ed-delBtn">Delete</button>
       </div>
     </div>
+
     <div class="recipe-info-box">
       <!-- recipe image -->
       <div class="recipeImg">
-        <img src="../images/recipe-chowmein.jpg" alt="chowmein" />
+        <div class="rec-spec-Img">
+          <img src="/images/recipe-pizza.jpg" alt="" />
+          <button class="viewBtn">View</button>
+        </div>
       </div>
+
       <!-- white recipe info box -->
       <div class="recipe-txt-box">
-        <p class="recipeChowHeader">Ch. Chow Mein</p>
+        <p class="recipeHeader">Supreme Pizza</p>
         <hr class="headerUnderline" />
         <p class="recipeInfo">
-          A great Chow Mein comes down to the sauce - it takes more than just
-          soy sauce and sugar! Jam packed with a surprising amount of hidden
-          vegetables, customize this Chicken Chow Mein recipe using your protein
-          of choice!
+          Make pizza night super duper out of this world with homemade pizza.
+          This recipe is supreme with vegetables and two types of meat. Yum!
         </p>
         <!-- estimated time for recipe -->
         <div class="timeInfo">
           <img src="../images/time.svg" alt="stopwatch" />
-          <p class="timeTxt">20 min</p>
+          <p class="timeTxt">1h 24min</p>
         </div>
         <!-- serving size info -->
         <div class="servingInfo">
