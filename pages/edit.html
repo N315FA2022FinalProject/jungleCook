@@ -1,0 +1,39 @@
+<!-- different title for each page -->
+<title>Edit Your Recipe</title>
+<link rel="stylesheet" href="/css/styles.css" />
+<!-- nav with 5 links (after login) -->
+<nav>
+  <!-- junglecook logo -->
+  <div class="logo"></div>
+  <!-- links -->
+  <div class="navLinks">
+    <a href="#">Home</a>
+    <a href="#">Browse</a>
+    <a href="#">Create Recipe</a>
+    <a href="#">Your Recipes</a>
+    <!-- login button -->
+    <div class="loginBtn">
+      <a href="#"><p class="loginTxt">Login</p></a>
+    </div>
+  </div>
+</nav>
+
+<!-- this is going to be the wrapper of the whole page -->
+<div class="edit-wrap">
+  <h1>Hey Michael, edit your recipe!</h1>
+  <div class="form-holder">
+    <div class="steps">
+      <input type="text" id="step0" placeholder="Step #1" />
+      <input type="text" id="step1" placeholder="Step #2" />
+      <input type="text" id="step2" placeholder="Step #3" />
+      <div class="addSBtn"><p>+</p></div>
+    </div>
+    <div class="ingred">
+      <input type="text" id="ingred0" placeholder="Ingredient #1" />
+      <input type="text" id="ingred1" placeholder="Ingredient #2" />
+      <input type="text" id="ingred2" placeholder="Ingredient #3" />
+      <div class="addButton"><p>+</p></div>
+    </div>
+    <div><input type="submit" value="Add Recipe" id="submitBtn" /></div>
+  </div>
+</div>

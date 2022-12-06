@@ -1,0 +1,61 @@
+.edit-wrap  {
+    height: calc(100vh);  
+    max-width: 100%;
+
+
+    //header of page
+    h1 {
+        margin-left: 40px;
+        margin-top: 150px;
+    }
+
+
+    .form-holder {
+        max-width: 973.5px;
+        margin: 0 auto;
+        margin-top: 40px;
+        position: relative;
+        /* background-color: aqua; */
+
+        .ingred input,
+        .steps input {
+           width: 100%;
+           height: 50px;
+           display: block;
+           margin-bottom: 10px;
+           border: none;
+           font-size: 24px;
+           padding-left: 20px;
+           outline: none;
+           border-bottom: 2px solid black;
+       }
+
+       .ingred,
+       .steps{
+        position: relative;
+        margin-bottom: 70px;
+    }
+
+    .addButton,
+    .addSBtn{
+         width: 50px;
+         height: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-size: 30px;
+         border-radius: 25px;
+         cursor: pointer;
+         position: absolute;
+         right: 5px;
+         bottom: 5px;
+         background-color: crimson;
+     }
+
+     p{
+        margin-bottom: 4px;
+        user-select: none;
+    }
+    }
+}
