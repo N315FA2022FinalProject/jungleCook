@@ -905,23 +905,20 @@ nav .navLinks .loginBtn .loginTxt {
   cursor: pointer;
 }
 
-.edit-wrap {
-  height: 100vh;
-  max-width: 100%;
-}
-.edit-wrap h1 {
+h1 {
   margin-left: 40px;
   margin-top: 150px;
 }
-.edit-wrap .form-holder {
+
+.form-holder {
   max-width: 973.5px;
   margin: 0 auto;
   margin-top: 40px;
   position: relative;
   /* background-color: aqua; */
 }
-.edit-wrap .form-holder .ingred input,
-.edit-wrap .form-holder .steps input {
+.form-holder .ingred input,
+.form-holder .steps input {
   width: 100%;
   height: 50px;
   display: block;
@@ -932,13 +929,13 @@ nav .navLinks .loginBtn .loginTxt {
   outline: none;
   border-bottom: 2px solid black;
 }
-.edit-wrap .form-holder .ingred,
-.edit-wrap .form-holder .steps {
+.form-holder .ingred,
+.form-holder .steps {
   position: relative;
   margin-bottom: 70px;
 }
-.edit-wrap .form-holder .addButton,
-.edit-wrap .form-holder .addSBtn {
+.form-holder .addButton,
+.form-holder .addSBtn {
   width: 50px;
   height: 50px;
   display: flex;
@@ -953,7 +950,7 @@ nav .navLinks .loginBtn .loginTxt {
   bottom: 5px;
   background-color: crimson;
 }
-.edit-wrap .form-holder p {
+.form-holder p {
   margin-bottom: 4px;
   user-select: none;
 }
