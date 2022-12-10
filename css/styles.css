@@ -906,12 +906,16 @@ nav .navLinks .loginBtn .loginTxt {
 }
 
 h1 {
-  margin-left: 60px;
+  margin-left: 100px;
   margin-top: 150px;
+  font-family: CaveatRegular;
+  font-size: 25px;
 }
 
 h2 {
   margin-bottom: 33px;
+  font-family: LatoBlack;
+  font-size: 20px;
 }
 
 .form-holder {
@@ -931,6 +935,10 @@ h2 {
   padding-left: 20px;
   outline: none;
   border-bottom: 2px solid black;
+}
+.form-holder ::placeholder {
+  font-family: LatoLight;
+  font-size: 20px;
 }
 .form-holder .ingred,
 .form-holder .steps, .form-holder .instruc {
@@ -970,8 +978,11 @@ h2 {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 7px;
+  font-size: 17px;
+  font-family: CaveatRegular;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
 }
 .form-holder #submitBtn {
   width: 422px;
@@ -985,6 +996,8 @@ h2 {
   margin-top: -50px;
   margin-left: 270px;
   margin-bottom: 30px;
+  font-size: 25px;
+  font-family: CaveatRegular;
   box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
