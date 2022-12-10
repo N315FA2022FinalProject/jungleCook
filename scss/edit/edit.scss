@@ -1,26 +1,30 @@
-
-
-
-    //header of page
+ //header of page
     h1 {
-        margin-left: 40px;
+        margin-left: 60px;
         margin-top: 150px;
     }
 
+    //header of sub inputs
+    h2 {
+        margin-bottom: 33px;
+    }
 
+    //this holds the entire form in a div
     .form-holder {
         max-width: 973.5px;
         margin: 0 auto;
         margin-top: 40px;
         position: relative;
-        background-color: aqua;
+        // background-color: aqua;
 
+
+        //styling of all inputs
         .ingred input,
-        .steps input {
+        .steps input, .instruc input {
            width: 100%;
            height: 50px;
            display: block;
-           margin-bottom: 10px;
+           margin-bottom: 50px;
            border: none;
            font-size: 24px;
            padding-left: 20px;
@@ -28,31 +32,68 @@
            border-bottom: 2px solid black;
        }
 
+       //these are the divs that hold the different TYPES of inputs
        .ingred,
-       .steps{
+       .steps, .instruc{
         position: relative;
-        margin-bottom: 70px;
+        margin-bottom: 110px;
     }
 
-    .addButton,
-    .addSBtn{
-         width: 50px;
-         height: 50px;
+    //all different buttons to add a new input box
+    .addinstrucButton,
+    .addingredButton,
+    .addSButton{
+         width: 38px;
+         height: 38px;
          display: flex;
          align-items: center;
          justify-content: center;
          color: #fff;
-         font-size: 30px;
+         font-size: 38px;
+         font-weight: bold;
          border-radius: 25px;
          cursor: pointer;
          position: absolute;
          right: 5px;
          bottom: 5px;
-         background-color: crimson;
+         background-color: #EFA7A7;
      }
 
-     p{
-        margin-bottom: 4px;
-        user-select: none;
-    }
+         //styling for the + sign in the buttons
+         p{
+            margin-bottom: 4px;
+            user-select: none;
+        }
+
+     //attach an image button
+     .addImgBtn{
+        width:110px;
+        height: 36.2px;
+        background-color: #EFA7A7;
+        border-radius: 25px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 7px;
+     }
+
+     //submit changes button
+     #submitBtn {
+        width: 422px;
+        height: 52px;
+        background-color: #EFA7A7;
+        border-radius: 30px;
+        color:white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin-top: -50px;
+        margin-left: 270px;
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 6px #00000029;
+     }
     }
