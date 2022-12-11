@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6, p {
 nav {
   height: 82px;
   width: 100%;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -648,7 +647,8 @@ nav .navLinks .loginBtn .loginTxt {
 .login-wrapper .login-signup {
   position: absolute;
   margin-left: 450px;
-  margin-top: 70px;
+  margin-top: 120px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -678,7 +678,7 @@ nav .navLinks .loginBtn .loginTxt {
   background-color: #FFD972;
   border-bottom: 2px solid black;
 }
-.login-wrapper .login-signup ::-webkit-input-placeholder {
+.login-wrapper .login-signup ::placeholder {
   color: black;
   font-size: 12px;
   font-family: LatoRegular;
@@ -699,8 +699,11 @@ nav .navLinks .loginBtn .loginTxt {
 }
 
 .yrecipe {
-  height: 100vh;
-  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
   background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -716,8 +719,10 @@ nav .navLinks .loginBtn .loginTxt {
   margin-bottom: 170px;
 }
 .yrecipe .rec-header {
-  width: 440px;
+  width: 650px;
   height: 32px;
+  font-size: 15px;
+  font-family: CaveatBold;
   margin-bottom: 50px;
 }
 .yrecipe .foodDivBox {
@@ -738,6 +743,8 @@ nav .navLinks .loginBtn .loginTxt {
   padding: 8px;
   box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  font-size: 20px;
+  font-family: CaveatRegular;
   background-color: #FFD972;
 }
 .yrecipe .newImg {
@@ -761,13 +768,17 @@ nav .navLinks .loginBtn .loginTxt {
   background-color: #fff;
 }
 .yrecipe h2 {
+  font-size: 15px;
+  font-family: LatoBlack;
   margin-bottom: 20px;
   text-decoration: underline;
   text-decoration-color: #000;
+  text-decoration-thickness: 2px;
   text-decoration-style: solid;
 }
 .yrecipe .text-descrip {
-  font-size: 9px;
+  font-size: 10px;
+  font-family: LatoRegular;
 }
 .yrecipe .text-all {
   width: 130px;
@@ -793,6 +804,7 @@ nav .navLinks .loginBtn .loginTxt {
   width: 269px;
   height: 42px;
   margin-left: 20px;
+  margin-bottom: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -803,6 +815,8 @@ nav .navLinks .loginBtn .loginTxt {
   border-radius: 22px;
   border: none;
   padding: 8px;
+  font-size: 19px;
+  font-family: CaveatRegular;
   box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   background-color: #FFD972;
@@ -810,6 +824,7 @@ nav .navLinks .loginBtn .loginTxt {
 
 .viewRecipe {
   margin-top: 243px;
+  position: relative;
 }
 .viewRecipe .topSection {
   display: flex;
@@ -905,27 +920,28 @@ nav .navLinks .loginBtn .loginTxt {
   cursor: pointer;
 }
 
-h1 {
+.edit-wrap {
+  flex-grow: 1;
+}
+.edit-wrap h1 {
   margin-left: 100px;
   margin-top: 150px;
   font-family: CaveatRegular;
   font-size: 25px;
 }
-
-h2 {
+.edit-wrap h2 {
   margin-bottom: 33px;
   font-family: LatoBlack;
   font-size: 20px;
 }
-
-.form-holder {
+.edit-wrap .form-holder {
   max-width: 973.5px;
   margin: 0 auto;
   margin-top: 40px;
   position: relative;
 }
-.form-holder .ingred input,
-.form-holder .steps input, .form-holder .instruc input {
+.edit-wrap .form-holder .ingred input,
+.edit-wrap .form-holder .steps input, .edit-wrap .form-holder .instruc input {
   width: 100%;
   height: 50px;
   display: block;
@@ -936,18 +952,18 @@ h2 {
   outline: none;
   border-bottom: 2px solid black;
 }
-.form-holder ::placeholder {
+.edit-wrap .form-holder ::placeholder {
   font-family: LatoLight;
   font-size: 20px;
 }
-.form-holder .ingred,
-.form-holder .steps, .form-holder .instruc {
+.edit-wrap .form-holder .ingred,
+.edit-wrap .form-holder .steps, .edit-wrap .form-holder .instruc {
   position: relative;
   margin-bottom: 110px;
 }
-.form-holder .addinstrucButton,
-.form-holder .addingredButton,
-.form-holder .addSButton {
+.edit-wrap .form-holder .addinstrucButton,
+.edit-wrap .form-holder .addingredButton,
+.edit-wrap .form-holder .addSButton {
   width: 38px;
   height: 38px;
   display: flex;
@@ -963,11 +979,11 @@ h2 {
   bottom: 5px;
   background-color: #EFA7A7;
 }
-.form-holder p {
+.edit-wrap .form-holder p {
   margin-bottom: 4px;
   user-select: none;
 }
-.form-holder .addImgBtn {
+.edit-wrap .form-holder .addImgBtn {
   width: 110px;
   height: 36.2px;
   background-color: #EFA7A7;
@@ -984,7 +1000,7 @@ h2 {
   font-family: CaveatRegular;
   box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
 }
-.form-holder #submitBtn {
+.edit-wrap .form-holder #submitBtn {
   width: 422px;
   height: 52px;
   background-color: #EFA7A7;

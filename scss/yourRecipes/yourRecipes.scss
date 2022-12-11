@@ -1,7 +1,10 @@
 //your recipe wrapper that holds the entirety of the page
 .yrecipe {
-    height: calc(100vh);  
-    max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
     background-image: linear-gradient(
         rgba(167, 232, 189, 0.6),
         rgba(167, 232, 189, 0.6)
@@ -21,10 +24,11 @@
         margin-bottom: 170px;
     }
     .rec-header {
-        width: 440px;
+        width: 650px;
         height: 32px;
+        font-size: 15px;
+        font-family: CaveatBold;
         margin-bottom: 50px;
-        
     }
 
     .foodDivBox {
@@ -46,6 +50,8 @@
         padding: 8px;
         box-shadow: 2px 5px 9px rgba(0,0,0,.2);
         cursor: pointer;
+        font-size: 20px;
+        font-family: CaveatRegular;
         background-color: #FFD972       
     }
     .newImg {
@@ -69,13 +75,17 @@
         background-color: #fff; 
     }
     h2 {
+        font-size: 15px;
+        font-family: LatoBlack;
         margin-bottom: 20px;
         text-decoration: underline;
         text-decoration-color: #000;
+       text-decoration-thickness: 2px;
         text-decoration-style: solid;
     }
     .text-descrip {
-        font-size: 9px;
+        font-size: 10px;
+        font-family: LatoRegular;
     }
    .text-all {
         width: 130px;
@@ -103,6 +113,7 @@
         width: 269px;
         height: 42px;
         margin-left: 20px;
+        margin-bottom: 150px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -113,7 +124,8 @@
         border-radius: 22px;
         border: none;
         padding: 8px;
-        
+        font-size: 19px;
+        font-family: CaveatRegular;
         box-shadow: 2px 5px 9px rgba(0,0,0,.2);
         cursor: pointer;
         background-color: #FFD972;
