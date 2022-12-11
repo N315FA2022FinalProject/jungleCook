@@ -14,35 +14,18 @@
       <div class="logo"></div>
       <!-- links -->
       <div class="navLinks">
-        <a href="#">Home</a>
-        <a href="#">Browse</a>
-        <a href="#">Create Recipes</a>
+        <a href="#home">Home</a>
+        <a href="#browse">Browse</a>
+        <a href="#createRecipe">Create Recipes</a>
         <!-- login button -->
-      <div class="loginBtn">
-        <a href="#"><p class="loginTxt">Login</p></a>
-      </div>
-      </div>
-    </nav>
-    <!-- this will be the home wrapper that contains the image shown in the xd file -->
-    <div class="home-wrapper">
-      <!-- PINK circle with content inside of the middle of the page -->
-      <div class="pink-circle">
-        <!-- text inside of the pink circle -->
-        <div class="pink-home-text">
-          Want to be a Jungle Cook? Go ahead and the kitchen is yours!
+        <div class="loginBtn">
+          <a href="#"><p class="loginTxt">Login</p></a>
         </div>
       </div>
-      <!-- YELLOW circle with content inside of the middle of the page -->
-      <div class="yellow-circle">
-        <!-- title of the page -->
-        <h1>The Jungle Cook</h1>
-        <!-- text inside of the yellow circle -->
-        <p class="yellow-home-text">
-          The home to various recipes of your choice. Add your own recipe today
-          and fill the world with joy!
-        </p>
-      </div>
-    </div>
+    </nav>
+    <!-- this is a div called app  -->
+    <div id="app"></div>
+
     <!-- end wrapper div and begin footer content -->
     <footer>
       <!-- logo for the footer -->
@@ -61,5 +44,10 @@
         <img src="images/instagram.svg" alt="Instagram Logo" />
       </div>
     </footer>
+
+    <!-- linking all js scripts to the page -->
+    <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="app/model.js" type="module"></script>
+    <script src="app/app.js" type="module"></script>
   </body>
 </html>
