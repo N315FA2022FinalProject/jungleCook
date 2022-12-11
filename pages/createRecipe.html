@@ -1,67 +1,121 @@
 <!-- title for create recpies page -->
-<title>Browse</title>
-<link rel="stylesheet" href="/css/styles.css">
+<title>Create a Recipe</title>
+<link rel="stylesheet" href="/css/styles.css" />
 
 <div class="createRecipePage">
-<!-- nav with 5 links (after login) -->
-    <nav>
-        <!-- junglecook logo -->
-        <div class="logo"></div>
-        <!-- links -->
-        <div class="navLinks">
-          <a href="#">Home</a>
-          <a href="#">Browse</a>
-          <a href="#">Create Recipe</a>
-          <a href="#">Your Recipes</a>
-          <!-- login button -->
-        <div class="loginBtn">
-          <a href="#"><p class="loginTxt">Login</p></a>
-        </div>
-        </div>
-    </nav>
-<!-- create recipe header -->
-    <p class="createHeader">Hey Michael, create your recipe!</p>
-<!-- recipe form start-->
-    <div class="recipeForm">
-        <div class="addRecipeImg">
-            <label for="image">Add Recipe Image</label>
-            <div class="addImg"><p class="addImgTxt">Attach File</p></div>
-        </div>
+  <!-- nav with 5 links (after login) -->
+  <nav>
+    <!-- junglecook logo -->
+    <div class="logo"></div>
+    <!-- links -->
+    <div class="navLinks">
+      <a href="#">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">Create Recipe</a>
+      <a href="#">Your Recipes</a>
+      <!-- login button -->
+      <div class="loginBtn">
+        <a href="#"><p class="loginTxt">Login</p></a>
+      </div>
+    </div>
+  </nav>
+  <!-- create recipe header -->
+  <p class="createHeader">Hey Michael, create your recipe!</p>
+  <!-- recipe form start-->
+  <div class="recipeForm">
+    <div class="addRecipeImg">
+      <label for="image">Add Recipe Image</label>
+      <div class="addImg"><p class="addImgTxt">Attach File</p></div>
+    </div>
 
-        <input type="text" id="recipeName" class="recipeName" placeholder="Recipe Name">
-        <input type="text" id="recipeDescription" class="recipeDescription" placeholder="Recipe Description">
-        <input type="text" id="recipeTotalTime" class="recipeTotalTime" placeholder="Recipe Total TIme">
-        <input type="text" id="recipeServingSize" class="recipeServingSize" placeholder="Recipe Serving Size">
+    <input
+      type="text"
+      id="recipeName"
+      class="recipeName"
+      placeholder="Recipe Name"
+    />
+    <input
+      type="text"
+      id="recipeDescription"
+      class="recipeDescription"
+      placeholder="Recipe Description"
+    />
+    <input
+      type="text"
+      id="recipeTotalTime"
+      class="recipeTotalTime"
+      placeholder="Recipe Total TIme"
+    />
+    <input
+      type="text"
+      id="recipeServingSize"
+      class="recipeServingSize"
+      placeholder="Recipe Serving Size"
+    />
+  </div>
+  <!-- recipe form ends -->
+  <!-- recipe ingedient form header -->
+  <h2 class="recipeIngredientHeader">Enter Ingredients:</h2>
+  <!-- recipe ingredient form starts -->
+  <div class="recipeIngredientForm">
+    <input
+      type="text"
+      id="ingredient1"
+      class="ingredient1"
+      placeholder="Ingredient #1"
+    />
+    <input
+      type="text"
+      id="ingredient2"
+      class="ingredient2"
+      placeholder="Ingredient #2"
+    />
+    <div class="addIngredient">
+      <input
+        type="text"
+        id="ingredient3"
+        class="ingredient3"
+        placeholder="Ingredient #3"
+      />
+      <button class="addIngredientBtn">
+        <p class="addIngredientTxt">+</p>
+      </button>
     </div>
-<!-- recipe form ends -->
-<!-- recipe ingedient form header -->
-    <h2 class="recipeIngredientHeader">Enter Ingredients:</h2>
-<!-- recipe ingredient form starts -->
-    <div class="recipeIngredientForm">
-        <input type="text" id="ingredient1" class="ingredient1" placeholder="Ingredient #1">
-        <input type="text" id="ingredient2" class="ingredient2" placeholder="Ingredient #2">
-        <div class="addIngredient">
-            <input type="text" id="ingredient3" class="ingredient3" placeholder="Ingredient #3">
-            <button class="addIngredientBtn"><p class="addIngredientTxt">+</p></button>
-        </div>
-    </div>
-<!-- recipe ingredient form ends -->
+  </div>
+  <!-- recipe ingredient form ends -->
 
-<!-- recipe instructions form header -->
-<h2 class="recipeInstructionHeader">Enter Instructions:</h2>
-<!-- recipe instructions form starts -->
-    <div class="recipeInstructionForm">
-        <input type="text" id="instruction1" class="instruction1" placeholder="Instruction #1">
-        <input type="text" id="instruction2" class="instruction2" placeholder="Instruction #2">
-        <div class="addInstruction">
-            <input type="text" id="instruction3" class="instruction3" placeholder="Instruction #3">
-            <button class="addInstructionBtn"><p class="addInstructionTxt">+</p></button>
-        </div>
+  <!-- recipe instructions form header -->
+  <h2 class="recipeInstructionHeader">Enter Instructions:</h2>
+  <!-- recipe instructions form starts -->
+  <div class="recipeInstructionForm">
+    <input
+      type="text"
+      id="instruction1"
+      class="instruction1"
+      placeholder="Instruction #1"
+    />
+    <input
+      type="text"
+      id="instruction2"
+      class="instruction2"
+      placeholder="Instruction #2"
+    />
+    <div class="addInstruction">
+      <input
+        type="text"
+        id="instruction3"
+        class="instruction3"
+        placeholder="Instruction #3"
+      />
+      <button class="addInstructionBtn">
+        <p class="addInstructionTxt">+</p>
+      </button>
     </div>
-<!-- recipe instruction form ends -->
+  </div>
+  <!-- recipe instruction form ends -->
 
-<!-- create recipe button -->
-    <div class="createBtn">
-        <button class="createRecipe">Create Recipe</button>
-    </div>
+  <!-- create recipe button -->
+  <div class="createBtn">
+    <button class="createRecipe">Create Recipe</button>
+  </div>
 </div>
