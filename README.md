@@ -18,6 +18,6 @@ Finally, you will be able to <i>delete</i> your recipes. If you changed your min
 
 <strong>Responsibilities:</strong>
 
-Zaydee worked on the home page, the your recipe page, the log in page, and the edit page. She also worked on the footer of the pages, and added the basic functions for the URL to work.
+Zaydee worked on the home page, the your recipe page, the log in page, and the edit page. She also worked on the footer of the pages, and worked on any responsiveness and functionality for her assigned pages.
 
-Naila worked on the browse page, create recipes page, and the view recipes page. She also worked on the navigation of the pages as well as her functionality for her pages.
+Naila worked on the browse page, create recipes page, and the view recipes page. She also worked on the navigation of the pages, and worked on the responsiveness and functionality for her assigned pages.
