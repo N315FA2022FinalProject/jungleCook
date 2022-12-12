@@ -13,7 +13,6 @@ export function currentPage(pageID, callback) {
 
     }
 
-
   /* This is a function that is called when the pageID is not empty or home. It is getting the pageID
   and then adding it to the pages folder. */
      else {
