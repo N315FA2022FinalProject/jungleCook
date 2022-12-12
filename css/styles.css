@@ -867,6 +867,28 @@ nav .navLinks .loginBtn .loginTxt {
   background-color: #FFD972;
 }
 
+@media only screen and (max-width: 800px) {
+  .wrap .rec-header {
+    margin-top: 50px;
+    margin-left: -60px;
+  }
+  .wrap .foodDivBox {
+    flex-direction: column;
+    margin-left: -150px;
+  }
+  .wrap .foodDivBox .newImg {
+    min-height: 55%;
+    min-width: 50%;
+    margin-bottom: 10px;
+  }
+  .wrap .foodDivBox .newImg .viewBtn {
+    margin-top: 45px;
+  }
+  .wrap .edDelBtns {
+    margin-left: -20px;
+    margin-top: 45px;
+  }
+}
 .viewRecipe {
   margin-top: 243px;
   position: relative;
