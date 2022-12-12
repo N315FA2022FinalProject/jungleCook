@@ -723,6 +723,22 @@ nav .navLinks .loginBtn .loginTxt {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
 }
 
+@media only screen and (max-width: 800px) {
+  .login-wrapper {
+    min-height: 1300px;
+  }
+  .login-wrapper .login-signup {
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .login-wrapper .login-signup .login {
+    margin-top: 120px;
+  }
+  .login-wrapper .login-signup .sign-up {
+    margin-top: 240px;
+    margin-left: 95px;
+  }
+}
 .yrecipe {
   position: fixed;
   top: 0;
