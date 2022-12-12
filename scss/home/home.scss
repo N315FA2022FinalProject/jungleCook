@@ -55,3 +55,14 @@
         }
         }
     }
+
+    //responsiveness for home content
+    @media only screen and (max-width: 800px) {
+      .pink-circle {
+        margin-left: -500px;
+      }
+
+      .yellow-circle{
+        margin-left: -500px;
+      }
+      }
