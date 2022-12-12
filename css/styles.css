@@ -90,6 +90,7 @@ nav .navLinks .loginBtn .loginTxt {
 @media (max-width: 800px) {
   nav {
     margin-top: 30px;
+    margin-bottom: 20px;
     flex-direction: column;
   }
   .logo {
@@ -158,10 +159,13 @@ nav .navLinks .loginBtn .loginTxt {
 }
 
 @media only screen and (max-width: 800px) {
-  .pink-circle {
+  .home-wrapper {
+    height: 100%;
+  }
+  .home-wrapper .pink-circle {
     margin-left: -500px;
   }
-  .yellow-circle {
+  .home-wrapper .yellow-circle {
     margin-left: -500px;
   }
 }
@@ -736,7 +740,7 @@ nav .navLinks .loginBtn .loginTxt {
   }
   .login-wrapper .login-signup .sign-up {
     margin-top: 240px;
-    margin-left: 95px;
+    margin-left: 50px;
   }
 }
 .yrecipe {
@@ -1058,6 +1062,45 @@ nav .navLinks .loginBtn .loginTxt {
   box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
+@media only screen and (max-width: 800px) {
+  .edit-wrap {
+    margin-top: 170px;
+    margin-top: 170px;
+  }
+  .edit-wrap .form-holder .steps {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 270px;
+  }
+  .edit-wrap .form-holder .steps input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .ingred {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 300px;
+  }
+  .edit-wrap .form-holder .ingred h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .ingred input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .instruc {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .edit-wrap .form-holder .instruc h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .instruc input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder #submitBtn {
+    margin-left: 30px;
+    margin-bottom: 150px;
+  }
+}
 footer {
   bottom: 0;
   width: 100%;

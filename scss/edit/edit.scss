@@ -116,3 +116,56 @@
      }
     }
 }
+
+//responsiveness for edit
+@media only screen and (max-width: 800px) {
+    .edit-wrap {
+        margin-top: 170px;
+      margin-top: 170px;
+        
+        .form-holder {
+
+             .steps {
+                width: 90%;
+                margin-left: 20px;
+        margin-bottom: 270px;
+
+        input {
+            margin-bottom: 20px;
+        }
+       }
+
+       .ingred {
+        h2 {
+            margin-left: 120px;
+        }
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 300px;
+
+        input {
+            margin-bottom: 20px;
+        }
+       }
+
+       .instruc{
+        h2 {
+            margin-left: 120px;
+        }
+        width: 90%;
+        margin-left: 20px;
+
+        input {
+            margin-bottom: 20px;
+        }
+       }
+
+       #submitBtn{
+        margin-left: 30px;
+        margin-bottom: 150px;
+       }
+        }
+      
+    }
+   
+}
