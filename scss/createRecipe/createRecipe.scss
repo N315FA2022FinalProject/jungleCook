@@ -254,11 +254,13 @@
 
      //create recipe button
      .createBtn {
+        margin-top: -200px;
         text-align: center;
         .createRecipe {
             width: 422px;
             height: 52px;
             margin: auto;
+            
             background-color: #EFA7A7;
             border-radius: 26px;
             border: 1px solid #EFA7A7;

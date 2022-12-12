@@ -39,12 +39,12 @@ function buyNow () {
 
 // user information
 function initSubmitListener() {
-    $("#loginButton").on("click", function (e){
+    $("#submit").on("click", function (e){
         console.log("submit");
-        let fn = $("#fn").val();
-        let ln = $("#ln").val();
-        let em = $("#sem").val();
-        let pw = $("#spw").val();
+        let fn = $("#fName").val();
+        let ln = $("#lName").val();
+        let em = $("#email").val();
+        let pw = $("#pw").val();
         if (fn == "") {
             alert("enter data");
 
@@ -67,7 +67,7 @@ function initSubmitListener() {
 
             MODEL.setUserInfo(userObj);
         }
-        console.log(`${fn} ${ln} ${em} ${pw} `);
+        // console.log(`${fn} ${ln} ${em} ${pw} `);
 
     });
 }
