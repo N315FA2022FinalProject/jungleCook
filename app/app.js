@@ -34,27 +34,40 @@ function initURLListener () {
 
 // user information
 function initSubmitListener() {
-    $("#login").on("click", function (e) {
-        e.preventDefault();
-        let email = $("#em").val();
-        let password = $("#pw").val();
-    
-        if (email == "") {
-            alert("Enter your email");
-        } else if (password == "") {
-            alert("You need to enter your password");
+    $("#submit").on("click", function (e){
+        console.log("submit");
+        let fn = $("#fn").val();
+        let ln = $("#ln").val();
+        let em = $("#sem").val();
+        let pw = $("#spw").val();
+        if (fn == "") {
+            alert("enter data");
+
+        }else if (ln == "") {
+            alert("enter data");
+
+        }else if (em == "") {
+            alert("enter data");
+
+        }else if (pw == "") {
+            alert("enter data");
+
         } else {
-            alert("yay");
-    
-            $("#em").val("");
-            $("#pw").val("");
-    
+            let userObj = {
+                FirstName: fn,
+                lastName: ln,
+                email: em,
+                password: pw,
+            };
+
+            MODEL.setUserInfo(userObj);
         }
-        
+        // console.log(`${fn} ${ln} ${em} ${pw} `);
+
     });
-    
-    }
+}
 
 $(document).ready(function (){
     initURLListener();
+    initSubmitListener();
 });
