@@ -117,7 +117,7 @@ export function changePage(pageID, callback, callbackTwo) {
 
      else {
         $.get(`pages/${pageID}.html`, function (data){
-            console.log("data " + data);
+            //console.log("data " + data);
             $("#app").html(data);
     });
 }

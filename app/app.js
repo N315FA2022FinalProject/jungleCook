@@ -19,66 +19,58 @@ function changeRoute () {
     }
 }
 
-//log in functionality 
-function initLogInListener() {
-    $("#logBtn").on("click", function (e) {
-      let loggedem = $("#em").val();
-      let loggedpw = $("#pw").val();
-  
-      if (loggedem == "") {
-        Swal.fire("Please enter a valid email address.");
-      } else if (loggedpw == "") {
-        Swal.fire("Please enter the correct password.");
-      } else {
-        let loggednUser = {
-          email: loggedem,
-          password: loggedpw,
+var ingredCnt = 3;
+var instructCnt = 3;
+//add button in create recipes page for ingredient/instruction
+function initAddListener() {
+
+    $(".addIngredientBtn").on("click", (e) => {
+        $(".createRecipePage .recipeIngredientForm").append(`<input type="text" id="ingredient${ingredCnt}"
+        class="Ingredient${ingredCnt}" placeHolder="Ingredient #${ingredCnt + 1}" />`  
+        );
+        console.log("click");
+        
+        //need to append after added
+        ingredCnt++;
+    });
+
+    $(".addInstructionBtn").on("click", (e) => {
+        //console.log("click");
+        $(".recipeInstructionForm").append(`<input type="text" id="instruction${instructCnt}"
+        placeHolder="Instruction #${instructCnt + 1}" />`  
+        );
+        //need to append after added
+        instructCnt++;
+    });
+
+    $("#submitBtn").on("click", (e) => {
+        let recipeObj = {
+            description: "",
+            steps: [
+
+            ],
+            ingredients: []
         };
-        MODEL.setUserInfo(loggednUser);
-  
-        Swal.fire(`Hello ${loggednUser.email}! You're now logged in.`);
-  
-        $("#em").val("");
-        $("#pw").val("");    
-      }
+        e.preventDefault();
+        //console.log("submit");
+        $(".createRecipePage .recipeIngredientForm input").each((idx, step) => {
+            //console.log(step.value);
+            recipeObj.steps.push({step: step.value});
+        });
+        $(".createRecipePage .recipeInstructionForm input").each((idx, ingred) => {
+            //console.log(ingred.value);
+            recipeObj.ingredients.push({ingred: ingred.value});
+        });
     });
-  }
-
-  //sign up functionality
-  function initSignUpListener() {
-    
-    $("#subBtn").on("click", function (e){
-        let fn = $("#fn").val();
-        let ln = $("#ln").val();
-        let signem = $("#sem").val();
-        let signpw = $("#spw").val();
-
-        if (fn == ""){
-            Swal.fire("Please enter your first name.");
-        } else if (ln == "") {
-            Swal.fire("Please enter your last name.");
-        } else if (signem == "") {
-            Swal.fire("Please enter your email address.");
-        } else if (signpw == ""){
-            Swal.fire("Please enter a password.");
-        } else {
-            let signedUser = {
-                firstName: fn,
-                lastName: ln,
-                signedEmail: signem,
-                signedPW: signpw
-            };
-            MODEL.setUserInfo(signedUser);
-            Swal.fire("Thank you for creating an account.");
-
-            $("#fn").val("");
-            $("#ln").val("");
-            $("#sem").val("");
-            $("#spw").val("");
-        }
-    });
-  }
-
+}
+ //     
+    // } else if (pageID == "blog") {
+    //     MODEL.changePage(pageID, buyNow);
+    // } else if (pageID == "account") {
+    //     MODEL.changePage(pageID, buyNow);
+    // } else if (pageID == "about") {
+    //     MODEL.changePage(pageID, buyNow);
+    // }}
 
 function initURLListener () {
     $(window).on("hashchange", changeRoute);
@@ -88,9 +80,30 @@ function initURLListener () {
 
 
 
-
-
+// user information
+function initSubmitListener() {
+    $("#login").on("click", function (e) {
+        e.preventDefault();
+        let email = $("#em").val();
+        let password = $("#pw").val();
+    
+        if (email == "") {
+            alert("Enter your email");
+        } else if (password == "") {
+            alert("You need to enter your password");
+        } else {
+            alert("yay");
+    
+            $("#em").val("");
+            $("#pw").val("");
+    
+        }
+        
+    });
+    
+    }
 
 $(document).ready(function (){
+    initAddListener();
     initURLListener();
 });
