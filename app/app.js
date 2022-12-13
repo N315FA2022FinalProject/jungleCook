@@ -14,7 +14,9 @@ function changeRoute () {
     }  else if (pageID =="yourRecipes") {
         MODEL.changePage(pageID, )
 
-    }else {
+    } else if (pageID == "createRecipes"){
+      MODEL.changePage(pageID, initAddListener);
+    } else {
         MODEL.changePage(pageID);
     }
 }
