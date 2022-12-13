@@ -126,6 +126,6 @@ export function changePage(pageID, callback, callbackTwo) {
 //takes the logged in user info and stores it with local storage
 export function setUserInfo(userObject) {
     userloggedInInfo = userObject;
-    return localStorage.setItem("userloggedInInfo", JSON.stringify(userloggedInInfo));
+   
   }
 
