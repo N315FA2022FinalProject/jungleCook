@@ -1,6 +1,6 @@
 # Jungle Cook Final Project
 
-## Web4 Link: https://github.com/N315FA2022FinalProject/jungleCook
+## Web4 Link: https://in-info-web4.informatics.iupui.edu/~zadomin/jungleCook/
 
 This is the final project for NEWM-N315 called Jungle Cook. This project consisted of creating a web application from scratch, following the design of an Adobe XD prototype. This is a website where you can <strong>Create, Read, Update, </strong> and <strong> Delete</strong> recipes, making this a CRUD application. In total, this project took about 5 weeks to complete. The specific functionality is listed below:
 
