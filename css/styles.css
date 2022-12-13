@@ -87,6 +87,23 @@ nav .navLinks .loginBtn .loginTxt {
   margin-top: 6%;
 }
 
+@media (max-width: 800px) {
+  nav {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .logo {
+    min-height: 60px;
+  }
+  .navLinks {
+    display: column;
+    margin-left: 50px;
+  }
+  .loginBtn {
+    margin-left: -40px;
+  }
+}
 .home-wrapper {
   width: 100vw;
   min-height: 100vh;
@@ -141,6 +158,17 @@ nav .navLinks .loginBtn .loginTxt {
   margin: 70px auto 0 110px;
 }
 
+@media only screen and (max-width: 800px) {
+  .home-wrapper {
+    height: 100%;
+  }
+  .home-wrapper .pink-circle {
+    margin-left: -500px;
+  }
+  .home-wrapper .yellow-circle {
+    margin-left: -500px;
+  }
+}
 .browsePage {
   width: 100vw;
   min-height: 100vh;
@@ -684,7 +712,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 12px;
   font-family: LatoRegular;
 }
-.login-wrapper .login-signup .buttons {
+.login-wrapper .login-signup #logBtn, .login-wrapper .login-signup #subBtn {
   width: 209px;
   height: 52px;
   font-size: 25px;
@@ -699,6 +727,22 @@ nav .navLinks .loginBtn .loginTxt {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
 }
 
+@media only screen and (max-width: 800px) {
+  .login-wrapper {
+    min-height: 1300px;
+  }
+  .login-wrapper .login-signup {
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .login-wrapper .login-signup .login {
+    margin-top: 120px;
+  }
+  .login-wrapper .login-signup .sign-up {
+    margin-top: 240px;
+    margin-left: 50px;
+  }
+}
 .yrecipe {
   position: fixed;
   top: 0;
@@ -823,6 +867,28 @@ nav .navLinks .loginBtn .loginTxt {
   background-color: #FFD972;
 }
 
+@media only screen and (max-width: 800px) {
+  .wrap .rec-header {
+    margin-top: 50px;
+    margin-left: -60px;
+  }
+  .wrap .foodDivBox {
+    flex-direction: column;
+    margin-left: -150px;
+  }
+  .wrap .foodDivBox .newImg {
+    min-height: 55%;
+    min-width: 50%;
+    margin-bottom: 10px;
+  }
+  .wrap .foodDivBox .newImg .viewBtn {
+    margin-top: 45px;
+  }
+  .wrap .edDelBtns {
+    margin-left: -20px;
+    margin-top: 45px;
+  }
+}
 .viewRecipe {
   margin-top: 243px;
   position: relative;
@@ -1018,6 +1084,45 @@ nav .navLinks .loginBtn .loginTxt {
   box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
 }
 
+@media only screen and (max-width: 800px) {
+  .edit-wrap {
+    margin-top: 170px;
+    margin-top: 170px;
+  }
+  .edit-wrap .form-holder .steps {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 270px;
+  }
+  .edit-wrap .form-holder .steps input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .ingred {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 300px;
+  }
+  .edit-wrap .form-holder .ingred h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .ingred input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .instruc {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .edit-wrap .form-holder .instruc h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .instruc input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder #submitBtn {
+    margin-left: 30px;
+    margin-bottom: 150px;
+  }
+}
 footer {
   bottom: 0;
   width: 100%;
@@ -1044,6 +1149,16 @@ footer img {
   width: 19px;
   height: 19px;
   margin-right: 40.4px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+    height: 19px;
+    margin: 0 40px 26px 40px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

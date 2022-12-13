@@ -27,6 +27,7 @@ function initAddListener() {
         class="Ingredient${ingredCnt}" placeHolder="Ingredient #${ingredCnt + 1}" />`  
         );
         console.log("click");
+        
         //need to append after added
         ingredCnt++;
     });

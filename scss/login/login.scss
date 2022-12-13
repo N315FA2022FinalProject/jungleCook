@@ -61,7 +61,7 @@
         font-family: LatoRegular;
     }
 //styling for both buttons (login + signup)
-.buttons {
+#logBtn , #subBtn {
      width: 209px;
      height: 52px;
      font-size: 25px;
@@ -77,4 +77,28 @@
     }
     }
    
+}
+
+//responsiveness for login
+@media only screen and (max-width: 800px) {
+
+    .login-wrapper {
+        min-height: 1300px;
+       .login-signup{
+        margin-left: 100px;
+       flex-direction: column;
+
+       .login {
+        margin-top: 120px;
+        // margin-bottom: 10px;
+        }
+
+       .sign-up {
+        margin-top: 240px;
+        margin-left: 50px;
+       }
+    } 
+    }
+
+    
 }

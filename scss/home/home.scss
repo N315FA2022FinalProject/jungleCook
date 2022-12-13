@@ -55,3 +55,18 @@
         }
         }
     }
+
+    //responsiveness for home content
+    @media only screen and (max-width: 800px) {
+      .home-wrapper {
+        height: 100%;
+      
+      .pink-circle {
+        margin-left: -500px;
+      }
+
+      .yellow-circle{
+        margin-left: -500px;
+      }
+      }
+    }
