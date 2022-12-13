@@ -276,3 +276,28 @@
         }
     }
 }
+
+//responsiveness for browse
+@media (max-width: 800px) {
+.browsePage {
+    max-width: 100%;
+    min-height: 100%;
+    .recipe-row-one {
+        flex-direction: column;
+        // margin-bottom: 390px;
+
+        .recipe-info-box {
+            margin-bottom: 500px;
+        }
+    }
+
+    .recipe-row-two {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        .recipe-info-box {
+            margin-bottom: 200px;
+        }
+    }
+}
+}

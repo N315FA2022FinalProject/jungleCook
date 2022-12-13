@@ -418,6 +418,25 @@ nav .navLinks .loginBtn .loginTxt {
   margin-left: 2px;
 }
 
+@media (max-width: 800px) {
+  .browsePage {
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .browsePage .recipe-row-one {
+    flex-direction: column;
+  }
+  .browsePage .recipe-row-one .recipe-info-box {
+    margin-bottom: 500px;
+  }
+  .browsePage .recipe-row-two {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .browsePage .recipe-row-two .recipe-info-box {
+    margin-bottom: 200px;
+  }
+}
 .createRecipePage {
   margin-bottom: 50px;
 }
