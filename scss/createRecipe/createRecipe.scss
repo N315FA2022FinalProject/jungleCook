@@ -107,6 +107,7 @@
         margin: 0 auto;
         margin-top: 78px;
         margin-bottom: 137px;
+        position: relative;
 
         .ingredient1{
             width: 980px;
@@ -186,6 +187,7 @@
          margin: 0 auto;
          margin-top: 78px;
          margin-bottom: 137px;
+         position: relative;
  
          .instruction1{
              width: 980px;
@@ -239,6 +241,9 @@
                  color: #FFF;
                  letter-spacing: 1.7px;
                  cursor: pointer;
+                 position: absolute;
+                 right: 2px;
+                 bottom: 5px;
      
                  .addInstructionTxt {
                      text-align: center;
@@ -253,10 +258,10 @@
      }
 
      //create recipe button
-     .createBtn {
+     .createBtn  {
         margin-top: -200px;
         text-align: center;
-        .createRecipe {
+        .createRecipes {
             width: 422px;
             height: 52px;
             margin: auto;
@@ -269,6 +274,9 @@
             font-size: 25px;
             letter-spacing: 2.5px;
             cursor: pointer;
+            position: absolute;
+            right: 2px;
+            bottom: 5px;
          }
      }
 }

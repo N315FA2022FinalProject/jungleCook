@@ -2,7 +2,7 @@ var userInfo = {};
 
 
 export function currentPage(pageID, callback) {
-    console.log(pageID);
+    //console.log(pageID);
     if (pageID =="" || pageID == "home") {
       $.get(`pages/home.html`, function (data) {
           // console.log("data" + data);
@@ -17,7 +17,7 @@ export function currentPage(pageID, callback) {
   and then adding it to the pages folder. */
      else {
         $.get(`pages/${pageID}.html`, function (data){
-            console.log("data " + data);
+            //console.log("data " + data);
             $("#app").html(data);
     });
 }
