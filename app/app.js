@@ -11,7 +11,10 @@ function changeRoute () {
     }
     else if (pageID == "login") {//if you are in the login page
     MODEL.changePage(pageID, initSignUpListener, initLogInListener);//initiate the two functions
-    } else {
+    }  else if (pageID =="yourRecipes") {
+        MODEL.changePage(pageID, )
+
+    }else {
         MODEL.changePage(pageID);
     }
 }

@@ -744,9 +744,6 @@ nav .navLinks .loginBtn .loginTxt {
   }
 }
 .yrecipe {
-  position: fixed;
-  top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
   background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
@@ -781,8 +778,8 @@ nav .navLinks .loginBtn .loginTxt {
 .yrecipe .viewBtn {
   width: 127px;
   height: 42px;
-  margin-left: 90px;
-  margin-top: 100px;
+  margin-left: 120px;
+  margin-top: -155px;
   border-radius: 22px;
   border: none;
   padding: 8px;
@@ -792,22 +789,19 @@ nav .navLinks .loginBtn .loginTxt {
   font-family: CaveatRegular;
   background-color: #FFD972;
 }
-.yrecipe .newImg {
+.yrecipe .newImg img {
   width: 300px;
   height: 100%;
+  margin-top: 10px;
   border-radius: 22px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.yrecipe .imgPizza {
-  background-image: url("../../images/recipe-pizza.jpg");
+  margin-left: 40px;
 }
 .yrecipe .textContainer {
   border-radius: 22px;
   width: 224px;
   height: 263px;
   display: flex;
+  margin-left: -90px;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -848,7 +842,7 @@ nav .navLinks .loginBtn .loginTxt {
 .yrecipe .edDelBtns {
   width: 269px;
   height: 42px;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-bottom: 150px;
   display: flex;
   align-items: center;
