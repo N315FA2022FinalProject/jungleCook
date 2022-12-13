@@ -60,9 +60,11 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .image [
+    .image {
         background-image: url(../images/recipe-pizza.jpg);
-    ]
+
+    }
+    
     
     .textContainer {
         border-radius: 22px;

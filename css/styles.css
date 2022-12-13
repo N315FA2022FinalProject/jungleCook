@@ -1,18 +1,1232 @@
-/* Error: expected "{".
- *    ,
- * 64 |         background-image: url(../images/recipe-pizza.jpg);
- *    |                                                          ^
- *    '
- *   scss\yourRecipes\yourRecipes.scss 64:58  @import
- *   scss\styles.scss 7:9                     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 64 \2502          background-image: url(../images/recipe-pizza.jpg);\d\a    \2502                                                           ^\a    \2575 \a   scss\\yourRecipes\\yourRecipes.scss 64:58  @import\a   scss\\styles.scss 7:9                     root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: CaveatBold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: CaveatRegular;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url(../css/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: LatoLight;
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+nav {
+  height: 82px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 2;
+}
+nav .logo {
+  margin-left: 50px;
+  width: 280px;
+  height: 60px;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav .navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 2.5px;
+  margin-right: 50px;
+}
+nav .navLinks a {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: CaveatRegular;
+  margin-right: 40px;
+}
+nav .navLinks a:active,
+nav .navLinks a:hover {
+  text-decoration: underline;
+}
+nav .navLinks .loginBtn {
+  height: 52px;
+  width: 158px;
+  border-radius: 26px;
+  background-color: #FFD972;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+}
+nav .navLinks .loginBtn .loginTxt {
+  margin: 0 auto;
+  margin-left: 30%;
+  margin-top: 6%;
+}
+
+@media (max-width: 800px) {
+  nav {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .logo {
+    min-height: 60px;
+  }
+  .navLinks {
+    display: column;
+    margin-left: 50px;
+  }
+  .loginBtn {
+    margin-left: -40px;
+  }
+}
+.home-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../images/hero.jpg);
+}
+.home-wrapper .pink-circle {
+  margin-top: 70px;
+  width: 167.88px;
+  height: 167.88px;
+  border-radius: 50%;
+  top: 100px;
+  left: 800px;
+  position: absolute;
+  background-color: #FCBCB8;
+}
+.home-wrapper .pink-circle .pink-home-text {
+  width: 105.76px;
+  height: 37.77px;
+  margin-top: 65px;
+  margin-left: 45px;
+  font-size: 10px;
+  font-family: LatoItalic;
+}
+.home-wrapper .yellow-circle {
+  margin-top: 60px;
+  width: 357.58px;
+  height: 357.58px;
+  border-radius: 50%;
+  top: 175px;
+  left: 550px;
+  position: absolute;
+  background-color: #FFD972;
+}
+.home-wrapper .yellow-circle h1 {
+  width: 300px;
+  height: 32px;
+  font-size: 24px;
+  font-family: CaveatBold;
+  margin: 80px auto 0 110px;
+}
+.home-wrapper .yellow-circle .yellow-home-text {
+  width: 164px;
+  height: 78px;
+  font-size: 13px;
+  font-family: LatoRegular;
+  margin: 70px auto 0 110px;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-wrapper {
+    height: 100%;
+  }
+  .home-wrapper .pink-circle {
+    margin-left: -500px;
+  }
+  .home-wrapper .yellow-circle {
+    margin-left: -500px;
+  }
+}
+.browsePage {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  position: absolute;
+}
+.browsePage .browseHeader {
+  margin-top: 195px;
+  margin-left: 107px;
+  font-size: 25px;
+  font-family: CaveatBold;
+  letter-spacing: 2.5px;
+}
+.browsePage .recipe-row-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.browsePage .recipe-row-one .recipe-info-box {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 51px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipeImg Img {
+  width: 300px;
+  height: 263px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box {
+  width: 224px;
+  height: 263px;
+  background-color: #FFF;
+  border-radius: 24px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .recipeHeader {
+  font-size: 15px;
+  font-family: LatoBlack;
+  text-align: center;
+  margin-top: 43px;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box hr.headerUnderline {
+  width: 128px;
+  border-top: solid 2px #000000;
+  margin: 0 auto;
+  margin-top: -16px;
+  margin-left: 42px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .recipeInfo {
+  font-size: 9px;
+  font-family: LatoRegular;
+  letter-spacing: 0.9px;
+  width: 139px;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .recipeBurgerInfo {
+  font-size: 9px;
+  font-family: LatoRegular;
+  letter-spacing: 0.9px;
+  width: 169px;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-left: 60px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeInfo img {
+  height: 24px;
+  width: 23px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeInfo .timeTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-left: 62px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingInfo img {
+  height: 23px;
+  width: 22px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingInfo .servingTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeBurgerInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-left: 60px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeBurgerInfo img {
+  height: 24px;
+  width: 23px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .timeBurgerInfo .timeBurgerTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingBurgerInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-left: 67px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingBurgerInfo img {
+  height: 23px;
+  width: 22px;
+}
+.browsePage .recipe-row-one .recipe-info-box .recipe-txt-box .servingBurgerInfo .servingBurgerTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+.browsePage .recipe-row-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.browsePage .recipe-row-two .recipe-info-box {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 51px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipeImg Img {
+  width: 300px;
+  height: 263px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box {
+  width: 224px;
+  height: 263px;
+  background-color: #FFF;
+  border-radius: 24px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .recipeHeader {
+  font-size: 15px;
+  font-family: LatoBlack;
+  text-align: center;
+  margin-top: 43px;
+  margin-right: 10px;
+  letter-spacing: 1.5px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .recipeChowHeader {
+  font-size: 15px;
+  font-family: LatoBlack;
+  text-align: center;
+  margin-top: 43px;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box hr.headerUnderline {
+  width: 135px;
+  border-top: solid 2px #000;
+  margin: 0 auto;
+  margin-top: -16px;
+  margin-left: 42px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .recipeInfo {
+  font-size: 9px;
+  font-family: LatoRegular;
+  letter-spacing: 0.9px;
+  width: 139px;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .timeInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-left: 60px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .timeInfo img {
+  height: 24px;
+  width: 23px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .timeInfo .timeTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .servingInfo {
+  width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-left: 62px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .servingInfo img {
+  height: 23px;
+  width: 22px;
+}
+.browsePage .recipe-row-two .recipe-info-box .recipe-txt-box .servingInfo .servingTxt {
+  font-size: 10px;
+  font-family: LatoRegular;
+  letter-spacing: 0.2px;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+@media (max-width: 800px) {
+  .browsePage {
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .browsePage .recipe-row-one {
+    flex-direction: column;
+  }
+  .browsePage .recipe-row-one .recipe-info-box {
+    margin-bottom: 500px;
+  }
+  .browsePage .recipe-row-two {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .browsePage .recipe-row-two .recipe-info-box {
+    margin-bottom: 200px;
+  }
+}
+.createRecipePage {
+  margin-bottom: 50px;
+}
+.createRecipePage .createHeader {
+  margin-top: 214px;
+  margin-left: 149px;
+  font-size: 25px;
+  font-family: CaveatBold;
+  letter-spacing: 2.5px;
+}
+.createRecipePage .recipeForm {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 78px;
+  margin-bottom: 137px;
+}
+.createRecipePage .recipeForm .addRecipeImg {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+.createRecipePage .recipeForm .addRecipeImg label {
+  font-size: 20px;
+  font-family: LatoLight;
+  letter-spacing: 2px;
+  display: block;
+}
+.createRecipePage .recipeForm .addRecipeImg .addImg {
+  width: 110px;
+  height: 36px;
+  background-color: #EFA7A7;
+  border-radius: 26px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  font-family: CaveatRegular;
+  font-size: 17px;
+  letter-spacing: 1.7px;
+}
+.createRecipePage .recipeForm .addRecipeImg .addImg .addImgTxt {
+  text-align: center;
+  margin-top: 6%;
+}
+.createRecipePage .recipeForm .recipeName {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeForm .recipeDescription {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeForm .recipeTotalTime {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeForm .recipeServingSize {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeForm ::placeholder {
+  font-family: LatoLight;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.createRecipePage .recipeIngredientHeader {
+  margin-left: 149px;
+  margin-bottom: 36px;
+  font-family: LatoBlack;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.createRecipePage .recipeIngredientForm {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 78px;
+  margin-bottom: 137px;
+  position: relative;
+}
+.createRecipePage .recipeIngredientForm .ingredient1 {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeIngredientForm .ingredient2 {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeIngredientForm .addIngredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.createRecipePage .recipeIngredientForm .addIngredient .ingredient3 {
+  min-width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  background: transparent;
+  padding-bottom: 7px;
+  margin-bottom: 93px;
+  position: absolute;
+}
+.createRecipePage .recipeIngredientForm .addIngredient .addIngredientBtn {
+  margin-bottom: 110px;
+  position: relative;
+  left: 476px;
+  width: 30px;
+  height: 30px;
+  background-color: #EFA7A7;
+  border: 1px solid #EFA7A7;
+  border-radius: 50px;
+  padding-bottom: 20px;
+  font-family: CaveatRegular;
+  font-size: 20px;
+  color: #FFF;
+  letter-spacing: 1.7px;
+  cursor: pointer;
+}
+.createRecipePage .recipeIngredientForm .addIngredient .addIngredientBtn .addIngredientTxt {
+  text-align: center;
+}
+.createRecipePage .recipeIngredientForm ::placeholder {
+  font-family: LatoLight;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.createRecipePage .recipeInstructionHeader {
+  margin-left: 149px;
+  margin-bottom: 36px;
+  font-family: LatoBlack;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.createRecipePage .recipeInstructionForm {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 78px;
+  margin-bottom: 137px;
+  position: relative;
+}
+.createRecipePage .recipeInstructionForm .instruction1 {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeInstructionForm .instruction2 {
+  width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  margin-bottom: 93px;
+}
+.createRecipePage .recipeInstructionForm .addInstruction {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.createRecipePage .recipeInstructionForm .addInstruction .instruction3 {
+  min-width: 980px;
+  height: 32px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  background: transparent;
+  padding-bottom: 7px;
+  margin-bottom: 93px;
+  position: absolute;
+}
+.createRecipePage .recipeInstructionForm .addInstruction .addInstructionBtn {
+  margin-bottom: 110px;
+  position: absolute;
+  left: 940px;
+  top: 180px;
+  width: 30px;
+  height: 30px;
+  background-color: #EFA7A7;
+  border: 1px solid #EFA7A7;
+  border-radius: 50px;
+  padding-bottom: 20px;
+  font-family: CaveatRegular;
+  font-size: 20px;
+  color: #FFF;
+  letter-spacing: 1.7px;
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+}
+.createRecipePage .recipeInstructionForm .addInstruction .addInstructionBtn .addInstructionTxt {
+  text-align: center;
+}
+.createRecipePage .recipeInstructionForm ::placeholder {
+  font-family: LatoLight;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.createRecipePage .createBtn {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.createRecipePage .createBtn .createRecipes {
+  width: 422px;
+  height: 52px;
+  margin: auto;
+  background-color: #EFA7A7;
+  border-radius: 26px;
+  border: 1px solid #EFA7A7;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  font-family: CaveatRegular;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  right: 2px;
+  bottom: 5px;
+}
+
+@media (max-width: 800px) {
+  .createRecipePage {
+    margin-bottom: 2000px;
+  }
+  .createRecipePage .createHeader {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .createRecipePage .recipeIngredientHeader {
+    margin-top: -30px;
+  }
+  .createRecipePage .recipeIngredientForm {
+    margin-top: -30px;
+  }
+  .createRecipePage .createBtn {
+    margin-top: -100px;
+  }
+}
+.login-wrapper {
+  background-color: #FFD972;
+  height: 713px;
+  position: relative;
+}
+.login-wrapper .login-signup {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-wrapper .login-signup .login h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  font-family: LatoBlack;
+}
+.login-wrapper .login-signup .sign-up {
+  margin-left: 200px;
+}
+.login-wrapper .login-signup .sign-up .signup-alert {
+  font-size: 12px;
+  font-family: LatoItalic;
+}
+.login-wrapper .login-signup .sign-up h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  font-family: LatoBlack;
+}
+.login-wrapper .login-signup #em, .login-wrapper .login-signup #pw, .login-wrapper .login-signup #fn, .login-wrapper .login-signup #ln, .login-wrapper .login-signup #sem, .login-wrapper .login-signup #spw {
+  width: 206.5px;
+  border: none;
+  display: block;
+  margin-bottom: 50px;
+  background-color: #FFD972;
+  border-bottom: 2px solid black;
+}
+.login-wrapper .login-signup ::placeholder {
+  color: black;
+  font-size: 12px;
+  font-family: LatoRegular;
+}
+.login-wrapper .login-signup #logBtn, .login-wrapper .login-signup #subBtn {
+  width: 209px;
+  height: 52px;
+  font-size: 25px;
+  padding: 10px 32px;
+  border-radius: 112px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FFD972;
+  font-family: CaveatRegular;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (max-width: 800px) {
+  .login-wrapper {
+    min-height: 1300px;
+  }
+  .login-wrapper .login-signup {
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .login-wrapper .login-signup .login {
+    margin-top: 120px;
+  }
+  .login-wrapper .login-signup .sign-up {
+    margin-top: 240px;
+    margin-left: 50px;
+  }
+}
+.yrecipe {
+  min-width: 100%;
+  height: 1000px;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.yrecipe .wrap {
+  width: 524px;
+  height: 402px;
+  margin-left: 127px;
+}
+.yrecipe .rec-header {
+  width: 650px;
+  height: 32px;
+  font-size: 15px;
+  margin-top: -500px;
+  font-family: CaveatBold;
+}
+.yrecipe .foodDivBox {
+  width: 524px;
+  height: 263px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.yrecipe .viewBtn {
+  width: 127px;
+  height: 42px;
+  margin-left: 120px;
+  margin-top: -155px;
+  border-radius: 22px;
+  border: none;
+  padding: 8px;
+  box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 20px;
+  font-family: CaveatRegular;
+  background-color: #FFD972;
+}
+.yrecipe .newImg {
+  width: 300px;
+  height: 100%;
+  margin-top: 10px;
+  border-radius: 22px;
+  margin-left: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yrecipe .image {
+  background-image: url(../images/recipe-pizza.jpg);
+}
+.yrecipe .textContainer {
+  border-radius: 22px;
+  width: 224px;
+  height: 263px;
+  display: flex;
+  margin-left: -90px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.yrecipe h2 {
+  font-size: 15px;
+  font-family: LatoBlack;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+}
+.yrecipe .text-descrip {
+  font-size: 10px;
+  font-family: LatoRegular;
+}
+.yrecipe .text-all {
+  width: 130px;
+  height: 177px;
+  display: inline;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.yrecipe .iconwrap {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.yrecipe .icons {
+  height: 23px;
+  width: 23px;
+  margin-right: 10px;
+}
+.yrecipe .edDelBtns {
+  width: 269px;
+  height: 42px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yrecipe .ed-del {
+  width: 127px;
+  height: 42px;
+  border-radius: 22px;
+  border: none;
+  padding: 8px;
+  font-size: 19px;
+  font-family: CaveatRegular;
+  box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #FFD972;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrap .rec-header {
+    margin-top: 50px;
+    margin-left: -60px;
+  }
+  .wrap .foodDivBox {
+    flex-direction: column;
+    margin-left: -150px;
+  }
+  .wrap .foodDivBox .newImg {
+    min-height: 55%;
+    min-width: 50%;
+    margin-bottom: 10px;
+  }
+  .wrap .foodDivBox .newImg .viewBtn {
+    margin-top: 45px;
+  }
+  .wrap .edDelBtns {
+    margin-left: -20px;
+    margin-top: 45px;
+  }
+}
+.viewRecipe {
+  margin-top: 243px;
+  position: relative;
+}
+.viewRecipe .topSection {
+  display: flex;
+  align-items: center;
+}
+.viewRecipe .topSection .titleImg {
+  display: flex;
+  align-items: center;
+}
+.viewRecipe .topSection .titleImg .verticalTxt {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+.viewRecipe .topSection .titleImg img {
+  width: 468px;
+  height: 421px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -90px;
+}
+.viewRecipe .topSection .recipeDetails {
+  padding-left: 40px;
+}
+.viewRecipe .topSection .recipeDetails .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .topSection .recipeDetails .viewRecipeTxtsmall {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+  width: 455px;
+}
+.viewRecipe .topSection .recipeDetails .subHeader {
+  font-size: 20px;
+  font-family: LatoBlack;
+  letter-spacing: 4px;
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.viewRecipe .ingredientsSection {
+  padding-left: 136px;
+  margin-top: 60px;
+}
+.viewRecipe .ingredientsSection .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .ingredientsSection .ingredientList {
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+.viewRecipe .ingredientsSection .ingredientList li {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+}
+.viewRecipe .instructionsSection {
+  padding-left: 136px;
+}
+.viewRecipe .instructionsSection .mainHeader {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: LatoBlack;
+  margin-bottom: 36px;
+}
+.viewRecipe .instructionsSection .instructionList {
+  margin-bottom: 60px;
+  padding-left: 28px;
+}
+.viewRecipe .instructionsSection .instructionList li {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: CaveatRegular;
+}
+.viewRecipe .editRecipeBtn {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-radius: 26px;
+  border: 1px solid #FFD972;
+  font-family: CaveatRegular;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: 134px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .topSection {
+    flex-direction: column;
+  }
+  .topSection .titleImg {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: -35px;
+    margin-top: -60px;
+    margin-bottom: 100px;
+  }
+  .topSection .recipeDetails {
+    margin-bottom: 100px;
+  }
+  .ingredientsSection {
+    max-width: 100%;
+    margin-left: -60px;
+    margin-bottom: 300px;
+  }
+  .instructionsSection {
+    max-width: 100%;
+    margin-left: -60px;
+  }
+}
+.edit-wrap {
+  flex-grow: 1;
+}
+.edit-wrap h1 {
+  margin-left: 100px;
+  margin-top: 150px;
+  font-family: CaveatRegular;
+  font-size: 25px;
+}
+.edit-wrap h2 {
+  margin-bottom: 33px;
+  font-family: LatoBlack;
+  font-size: 20px;
+}
+.edit-wrap .form-holder {
+  max-width: 973.5px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+}
+.edit-wrap .form-holder .ingred input,
+.edit-wrap .form-holder .steps input, .edit-wrap .form-holder .instruc input {
+  width: 100%;
+  height: 50px;
+  display: block;
+  margin-bottom: 50px;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.edit-wrap .form-holder ::placeholder {
+  font-family: LatoLight;
+  font-size: 20px;
+}
+.edit-wrap .form-holder .ingred,
+.edit-wrap .form-holder .steps, .edit-wrap .form-holder .instruc {
+  position: relative;
+  margin-bottom: 110px;
+}
+.edit-wrap .form-holder .addinstrucButton,
+.edit-wrap .form-holder .addingredButton,
+.edit-wrap .form-holder .addSButton {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: #EFA7A7;
+}
+.edit-wrap .form-holder p {
+  margin-bottom: 4px;
+  user-select: none;
+}
+.edit-wrap .form-holder .addImgBtn {
+  width: 110px;
+  height: 36.2px;
+  background-color: #EFA7A7;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  font-size: 17px;
+  font-family: CaveatRegular;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.edit-wrap .form-holder #submitBtn {
+  width: 422px;
+  height: 52px;
+  background-color: #EFA7A7;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 270px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: CaveatRegular;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+@media only screen and (max-width: 800px) {
+  .edit-wrap {
+    margin-top: 170px;
+    margin-top: 170px;
+  }
+  .edit-wrap .form-holder .steps {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 270px;
+  }
+  .edit-wrap .form-holder .steps input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .ingred {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 300px;
+  }
+  .edit-wrap .form-holder .ingred h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .ingred input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder .instruc {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .edit-wrap .form-holder .instruc h2 {
+    margin-left: 120px;
+  }
+  .edit-wrap .form-holder .instruc input {
+    margin-bottom: 20px;
+  }
+  .edit-wrap .form-holder #submitBtn {
+    margin-left: 30px;
+    margin-bottom: 150px;
+  }
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footLogo {
+  font-size: 15px;
+  margin-left: 20px;
+  font-family: LatoItalic;
+}
+footer .spef-text {
+  display: flex;
+}
+footer .spef-text .spef-text-inside {
+  font-size: 15px;
+  margin-right: 26px;
+  font-family: LatoItalic;
+}
+footer img {
+  width: 19px;
+  height: 19px;
+  margin-right: 40.4px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    width: 100%;
+    height: 19px;
+    margin: 0 40px 26px 40px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
