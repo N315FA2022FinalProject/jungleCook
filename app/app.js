@@ -132,30 +132,6 @@ function initURLListener () {
 }
 
 
-
-// user information
-function initSubmitListener() {
-    $("#login").on("click", function (e) {
-        e.preventDefault();
-        let email = $("#em").val();
-        let password = $("#pw").val();
-    
-        if (email == "") {
-            alert("Enter your email");
-        } else if (password == "") {
-            alert("You need to enter your password");
-        } else {
-            alert("yay");
-    
-            $("#em").val("");
-            $("#pw").val("");
-    
-        }
-        
-    });
-    
-    }
-
 $(document).ready(function (){
     initAddListener();
     initURLListener();
