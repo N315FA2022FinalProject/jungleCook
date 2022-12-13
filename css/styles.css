@@ -833,12 +833,18 @@ nav .navLinks .loginBtn .loginTxt {
   font-family: CaveatRegular;
   background-color: #FFD972;
 }
-.yrecipe .newImg img {
+.yrecipe .newImg {
   width: 300px;
   height: 100%;
   margin-top: 10px;
   border-radius: 22px;
   margin-left: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yrecipe .image {
+  background-image: url(../images/recipe-pizza.jpg);
 }
 .yrecipe .textContainer {
   border-radius: 22px;
