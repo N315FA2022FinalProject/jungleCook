@@ -1,9 +1,10 @@
 var userloggedInInfo = {}; // user information
 var newRecipes = []; //user newly made recipes
+recID = "";
 var recipes = [{ // all of the recipes to be implemented
 
     //pizza
-    RecipeName: "Supreme Pizza",
+    recipeName: "Supreme Pizza",
     description: "Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum",
     timeInterval: "1 hr 24 min",
     servingSize: "4 servings",
@@ -67,7 +68,45 @@ export function changePage(pageID, callback, callbackTwo) {
         );
 
         $.each(newRecipes, function (idx, recipe){
-            
+            $(".foodDivBox").append(`
+            <div class="newImg">
+            <img src="${recipe.image} alt="" />
+            <a href="#viewRecipe">
+              <button class="viewBtn">View</button>
+            </a>
+          </div>
+          <div class="textContainer">
+            <div class="text-all">
+          
+              <h2>${recipe.recipeName}</h2>
+             
+              <p class="text-descrip">
+                ${recipe.description}
+              </p>
+              <!-- div that wraps all the icons -->
+              <div class="iconwrap">
+                <!-- time icon -->
+                <img class="icons" src="../images/time.svg" />
+                <p class="text-descrip">${recipe.timeInterval}</p>
+              </div>
+              <!-- div that wraps all the icons -->
+              <div class="iconwrap">
+                <!-- servings icon -->
+                <img class="icons" src="../images/servings.svg" />
+                <p class="text-descrip">${recipe.servingSize}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edDelBtns">
+        <a href="#edit">
+          <!-- edit recipe btn -->
+          <button class="ed-del" id ="${recipe.id}">Edit Recipe</button>
+        </a>
+        <!-- delete recipe btn -->
+        <button class="ed-del" id ="${rec.id}">Delete</button>
+      </div>
+            `);
         });
 
 
