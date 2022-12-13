@@ -1,7 +1,7 @@
 //your recipe wrapper that holds the entirety of the page
 .yrecipe {
   min-width: 100%;
-  min-height: 100%;
+  height: 1000px;
     background-image: linear-gradient(
         rgba(167, 232, 189, 0.6),
         rgba(167, 232, 189, 0.6)
@@ -18,14 +18,13 @@
         width: 524px;
         height: 402px;
         margin-left: 127px;
-        margin-bottom: 170px;
     }
     .rec-header {
         width: 650px;
         height: 32px;
         font-size: 15px;
+        margin-top: -500px;
         font-family: CaveatBold;
-        margin-bottom: 50px;
     }
 
     .foodDivBox {

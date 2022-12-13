@@ -63,14 +63,67 @@ function initAddListener() {
         });
     });
 }
- //     
-    // } else if (pageID == "blog") {
-    //     MODEL.changePage(pageID, buyNow);
-    // } else if (pageID == "account") {
-    //     MODEL.changePage(pageID, buyNow);
-    // } else if (pageID == "about") {
-    //     MODEL.changePage(pageID, buyNow);
-    // }}
+//logging in function
+function initLogInListener() {
+    $("#logBtn").on("click", function (e) {
+      let em = $("#em").val();
+      let pw = $("#pw").val();
+  
+      if (em == "") {
+        Swal.fire("Please enter a valid email address.");
+      } else if (pw == "") {
+        Swal.fire("Please enter your password.");
+      } else {
+        let loggedUser = {
+          email: em,
+          password: pw,
+        };
+        MODEL.setUserInfo(loggedUser);
+  
+        Swal.fire(`Hello ${loggedUser.email}! You're now logged in.`);
+        // window.location.replace("#logout");
+  
+        //Change props for viewing as logged in user
+        $("#em").val("");
+        $("#pw").val("");    
+      }
+    });
+  }
+  
+  //signn up function
+  function initSignUpListener() {
+    $("#subBtn").on("click", function (e) {
+      let fn = $("#fn").val();
+      let ln = $("#ln").val();
+      let em = $("#sem").val();
+      let pw = $("#spw").val();
+  
+      if (fn == "") {
+        Swal.fire("Please enter your first name.");
+      } else if (ln == "") {
+        Swal.fire("Please enter your last name.");
+      } else if (em == "") {
+        Swal.fire("Please enter an email address.");
+      } else if (pw == "") {
+        Swal.fire("Please create a password.");
+      } else {
+        let signedUser = {
+          firstname: fn,
+          lastname: ln,
+          email: sem,
+          password: spw,
+        };
+  
+        MODEL.setUserInfo(signedUser);
+        Swal.fire(`${signedUser.firstname}, thank you for creating an account.`);
+  
+        $("#fn").val("");
+        $("#ln").val("");
+        $("#sem").val("");
+        $("#spw").val("");
+      }
+    });
+  }
 
 function initURLListener () {
     $(window).on("hashchange", changeRoute);
@@ -78,30 +131,6 @@ function initURLListener () {
     changeRoute();
 }
 
-
-
-// user information
-function initSubmitListener() {
-    $("#login").on("click", function (e) {
-        e.preventDefault();
-        let email = $("#em").val();
-        let password = $("#pw").val();
-    
-        if (email == "") {
-            alert("Enter your email");
-        } else if (password == "") {
-            alert("You need to enter your password");
-        } else {
-            alert("yay");
-    
-            $("#em").val("");
-            $("#pw").val("");
-    
-        }
-        
-    });
-    
-    }
 
 $(document).ready(function (){
     initAddListener();
