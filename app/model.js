@@ -1,6 +1,6 @@
 var userloggedInInfo = {}; // user information
 var newRecipes = []; //user newly made recipes
-recID = "";
+// recID = "";
 var recipes = [{ // all of the recipes to be implemented
 
     //pizza
