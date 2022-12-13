@@ -695,6 +695,24 @@ nav .navLinks .loginBtn .loginTxt {
   bottom: 5px;
 }
 
+@media (max-width: 800px) {
+  .createRecipePage {
+    margin-bottom: 2000px;
+  }
+  .createRecipePage .createHeader {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .createRecipePage .recipeIngredientHeader {
+    margin-top: -30px;
+  }
+  .createRecipePage .recipeIngredientForm {
+    margin-top: -30px;
+  }
+  .createRecipePage .createBtn {
+    margin-top: -100px;
+  }
+}
 .login-wrapper {
   background-color: #FFD972;
   height: 713px;
@@ -1007,6 +1025,30 @@ nav .navLinks .loginBtn .loginTxt {
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  .topSection {
+    flex-direction: column;
+  }
+  .topSection .titleImg {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: -35px;
+    margin-top: -60px;
+    margin-bottom: 100px;
+  }
+  .topSection .recipeDetails {
+    margin-bottom: 100px;
+  }
+  .ingredientsSection {
+    max-width: 100%;
+    margin-left: -60px;
+    margin-bottom: 300px;
+  }
+  .instructionsSection {
+    max-width: 100%;
+    margin-left: -60px;
+  }
+}
 .edit-wrap {
   flex-grow: 1;
 }

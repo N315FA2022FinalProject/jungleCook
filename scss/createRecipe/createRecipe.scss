@@ -281,3 +281,32 @@
          }
      }
 }
+
+//responsiveness for create recipe
+@media (max-width: 800px) {
+.createRecipePage{
+    margin-bottom: 2000px;
+    .createHeader {
+        width: 100%;
+        margin-left: 60px;
+       } 
+
+       .recipeIngredientHeader {
+        margin-top: -30px;
+       }
+
+       .recipeIngredientForm {
+        margin-top: -30px;
+       }
+
+       .createBtn {
+        margin-top: -100px;
+    
+        
+       }
+
+}
+       
+      
+    }
+   

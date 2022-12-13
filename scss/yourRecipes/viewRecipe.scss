@@ -112,3 +112,33 @@
         cursor: pointer;
     }
 }
+
+//responsiveness for view recipe
+@media (max-width: 800px) {
+    .topSection {
+        flex-direction: column;
+
+        .titleImg {
+            max-width: 100%;
+            margin: 0 auto;
+            margin-left: -35px;
+            margin-top: -60px;
+            margin-bottom: 100px;
+        }
+
+        .recipeDetails {
+            margin-bottom: 100px;
+        }
+
+    }
+    .ingredientsSection {
+        max-width: 100%;
+        margin-left: -60px;
+        margin-bottom: 300px;
+    }
+
+    .instructionsSection{
+        max-width: 100%;
+        margin-left: -60px ;
+    }
+}
