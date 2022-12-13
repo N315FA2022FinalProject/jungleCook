@@ -113,7 +113,7 @@ nav .navLinks .loginBtn .loginTxt {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../../images/hero.jpg);
+  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../images/hero.jpg);
 }
 .home-wrapper .pink-circle {
   margin-top: 70px;
@@ -178,7 +178,7 @@ nav .navLinks .loginBtn .loginTxt {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../../images/recipe-hero.jpg);
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
   position: absolute;
 }
 .browsePage .browseHeader {
