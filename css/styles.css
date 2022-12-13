@@ -630,8 +630,9 @@ nav .navLinks .loginBtn .loginTxt {
 }
 .createRecipePage .recipeInstructionForm .addInstruction .addInstructionBtn {
   margin-bottom: 110px;
-  position: relative;
-  left: 476px;
+  position: absolute;
+  left: 940px;
+  top: 180px;
   width: 30px;
   height: 30px;
   background-color: #EFA7A7;
@@ -656,7 +657,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 20px;
 }
 .createRecipePage .createBtn {
-  margin-top: -200px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .createRecipePage .createBtn .createRecipes {
@@ -671,7 +672,6 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 25px;
   letter-spacing: 2.5px;
   cursor: pointer;
-  position: absolute;
   right: 2px;
   bottom: 5px;
 }
