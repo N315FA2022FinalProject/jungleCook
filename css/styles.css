@@ -712,7 +712,7 @@ nav .navLinks .loginBtn .loginTxt {
   font-size: 12px;
   font-family: LatoRegular;
 }
-.login-wrapper .login-signup .buttons {
+.login-wrapper .login-signup #logBtn, .login-wrapper .login-signup #subBtn {
   width: 209px;
   height: 52px;
   font-size: 25px;
