@@ -8,6 +8,7 @@ function changeRoute () {
     //route different pages
     if (pageID == "" || pageID == "home") { //if pageID is empty 
       MODEL.changePage("home");//the default page to go to is home
+      Swal.fire("ALERT: You are not logged in. Please go ahead and log in.")
     }
     else if (pageID == "login") {//if you are in the login page
     MODEL.changePage(pageID, initSignUpListener, initLogInListener);//initiate the two functions
