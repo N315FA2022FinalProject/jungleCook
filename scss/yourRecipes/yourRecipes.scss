@@ -1,8 +1,5 @@
 //your recipe wrapper that holds the entirety of the page
 .yrecipe {
-  position: fixed;
-  top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
     background-image: linear-gradient(
@@ -43,8 +40,8 @@
     .viewBtn {
         width: 127px;
         height: 42px;
-        margin-left: 90px;
-        margin-top: 100px;
+        margin-left: 120px;
+        margin-top: -155px;
         border-radius: 22px;
         border: none;
         padding: 8px;
@@ -54,22 +51,20 @@
         font-family: CaveatRegular;
         background-color: #FFD972       
     }
-    .newImg {
+    .newImg img {
         width: 300px;
         height: 100%;
+        margin-top: 10px;
         border-radius: 22px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin-left: 40px;
     }
-    .imgPizza {
-        background-image: url('../../images/recipe-pizza.jpg');
-    }
+    
     .textContainer {
         border-radius: 22px;
         width: 224px;
         height: 263px;
         display: flex;
+        margin-left: -90px;
         align-items: center;
         justify-content: center;
         background-color: #fff; 
@@ -112,7 +107,7 @@
    .edDelBtns {
         width: 269px;
         height: 42px;
-        margin-left: 20px;
+        margin-left: 50px;
         margin-bottom: 150px;
         display: flex;
         align-items: center;

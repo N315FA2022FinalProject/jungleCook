@@ -6,14 +6,16 @@ function changeRoute () {
     // console.log(hashTag + ' ' + pageID);
 
     //route different pages
-    if (pageID == "" || pageID == "home") {
-      MODEL.currentPage("home");
-    } else if (pageID == "login") {
-        MODEL.currentPage("login", initSubmitListener);
-    } else if (pageID == "createrecipes") {
-        MODEL.currentPage("createrecipes", initAddListener);
+    if (pageID == "" || pageID == "home") { //if pageID is empty 
+      MODEL.changePage("home");//the default page to go to is home
+    }
+    else if (pageID == "login") {//if you are in the login page
+    MODEL.changePage(pageID, initSignUpListener, initLogInListener);//initiate the two functions
+    }  else if (pageID =="yourRecipes") {
+        MODEL.changePage(pageID, )
+
     }else {
-        MODEL.currentPage(pageID);
+        MODEL.changePage(pageID);
     }
 }
 
